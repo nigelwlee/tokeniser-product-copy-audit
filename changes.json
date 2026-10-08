@@ -1,0 +1,389 @@
+{
+  "base": "https://es-tokeniser-qa-website--pr-159-8p0z3ri2.web.app",
+  "audited": "2026-10-08",
+  "pages": [
+    {
+      "id": "collateral-mobility",
+      "group": "Superpowers",
+      "name": "Collateral Mobility",
+      "path": "/product/superpowers/collateral-mobility",
+      "changes": [
+        {
+          "section": "Hero · H1",
+          "before": "Your holdings, no longer stuck.",
+          "after": "Keep the capital, <em>even when investors need cash.</em>",
+          "tier": "break",
+          "why": "\"Your holdings\" addresses the investor. The subtitle underneath already speaks to the fund (\"your fund keeps the capital\"), so the headline should land the same issuer outcome.",
+          "shotBefore": "shots/collateral-mobility/0-before.jpg",
+          "shotAfter": "shots/collateral-mobility/0-after.jpg"
+        },
+        {
+          "section": "The problem today · body",
+          "before": "When an investor in a private fund needs cash, redeeming is usually the only option. Their units cannot easily be used as security for a loan, because lenders cannot hold or move them quickly. So the investor leaves, and your fund loses the capital.",
+          "after": "When your investors need cash, your fund pays for it. Redeeming is usually their only option, because lenders cannot easily hold or move private fund units as security. So the investor leaves, and the capital leaves with them.",
+          "tier": "tighten",
+          "why": "Leads with the fund's cost instead of the investor's predicament. The facts are unchanged.",
+          "shotBefore": "shots/collateral-mobility/1-before.jpg",
+          "shotAfter": "shots/collateral-mobility/1-after.jpg"
+        },
+        {
+          "section": "What changes · Fewer redemptions",
+          "before": "Investors who need cash can borrow against their units instead of selling them. They stay invested, and your AUM stays put.",
+          "after": "Let investors who need cash borrow against their units instead of redeeming. They stay invested, and your AUM stays put.",
+          "tier": "tighten",
+          "why": "Frames the feature as something the fund offers. \"Redeeming\" is more accurate for fund units than \"selling\".",
+          "shotBefore": "shots/collateral-mobility/2-before.jpg",
+          "shotAfter": "shots/collateral-mobility/2-after.jpg"
+        },
+        {
+          "section": "How it works · body",
+          "before": "An investor pledges their units to an approved lender. The units are held as security and cannot be sold or transferred while the loan is open. When the loan is repaid, they are released straight back. You decide which lenders can take part and on what terms.",
+          "after": "You approve the lenders and set the terms. An investor pledges units to one of those lenders, and the units are held as security, unable to be sold or transferred, while the loan is open. When the loan is repaid, they are released straight back.",
+          "tier": "tighten",
+          "why": "Moves the issuer's control from the last sentence to the first, so the mechanism reads as the fund's rules in action.",
+          "shotBefore": "shots/collateral-mobility/3-before.jpg",
+          "shotAfter": "shots/collateral-mobility/3-after.jpg"
+        },
+        {
+          "section": "How it works · diagram (image asset)",
+          "asset": "03-collateral-mobility",
+          "before": "Today: Need cash? Sell units → Position exited · On Tokeniser: Units pledged → Loan funded → Repaid and released · \"Stay invested.\"",
+          "after": "Today: Investor needs cash → Units redeemed, capital leaves · On Tokeniser: Units pledged → Loan funded → Repaid and released · \"Capital stays in.\"",
+          "tier": "break",
+          "why": "The diagram's tagline \"Stay invested.\" and the question \"Need cash?\" both speak to the investor. This text is part of the image, so a designer needs to re-export the image (desktop and mobile versions) and update the alt text to match.",
+          "shotBefore": "shots/collateral-mobility/4-before.jpg"
+        }
+      ]
+    },
+    {
+      "id": "secondary-transfer",
+      "group": "Superpowers",
+      "name": "Secondary Transfer",
+      "path": "/product/superpowers/secondary-transfer",
+      "changes": [
+        {
+          "section": "Hero · H1",
+          "before": "Change hands, any day.",
+          "after": "Give investors an exit, <em>any day.</em>",
+          "tier": "break",
+          "why": "\"Change hands\" describes the investor's action. The issuer's value is offering the exit, which the rewrite says, keeping the \"any day\" payoff.",
+          "shotBefore": "shots/secondary-transfer/0-before.jpg",
+          "shotAfter": "shots/secondary-transfer/0-after.jpg"
+        },
+        {
+          "section": "Hero · subtitle",
+          "before": "No redemption window needed. Investors can exit by transferring their position to another eligible investor, without touching the fund's capital.",
+          "after": "No redemption window needed. Let investors exit by transferring their position to another eligible investor, while your fund's capital stays put.",
+          "tier": "tighten",
+          "why": "Makes this something the fund offers, and changes \"the fund's\" to \"your fund's\" so \"you\" is consistently the issuer.",
+          "shotBefore": "shots/secondary-transfer/1-before.jpg",
+          "shotAfter": "shots/secondary-transfer/1-after.jpg"
+        },
+        {
+          "section": "The problem today · H2",
+          "before": "Locked in until the window opens",
+          "after": "Lock-ups that cost you investors",
+          "tier": "tighten",
+          "why": "\"Locked in\" is how the investor experiences it. The issuer's problem, which the body ends on, is investors who say no because of the lock-up.",
+          "shotBefore": "shots/secondary-transfer/2-before.jpg",
+          "shotAfter": "shots/secondary-transfer/2-after.jpg"
+        }
+      ]
+    },
+    {
+      "id": "real-time-transparency",
+      "group": "Superpowers",
+      "name": "Real-Time Transparency",
+      "path": "/product/superpowers/real-time-transparency",
+      "changes": [
+        {
+          "section": "Hero · H1",
+          "before": "Every position, visible in real time.",
+          "after": "Your register, <em>live for every investor.</em>",
+          "tier": "tighten",
+          "why": "\"Every position\" reads as the investor checking their holding. The issuer owns the register, and making it live is the product.",
+          "shotBefore": "shots/real-time-transparency/0-before.jpg",
+          "shotAfter": "shots/real-time-transparency/0-after.jpg"
+        }
+      ]
+    },
+    {
+      "id": "always-on",
+      "group": "Superpowers",
+      "name": "Always-On",
+      "path": "/product/superpowers/always-on",
+      "changes": [
+        {
+          "section": "Hero · subtitle",
+          "before": "No market hours, no cut-offs. Investors can view, subscribe, transfer and settle at any hour, from any device, with your rules checked every time.",
+          "after": "No market hours, no cut-offs. Let investors view, subscribe, transfer and settle at any hour, from any device, with your rules checked every time.",
+          "tier": "tighten",
+          "why": "A one-word change that makes the fund the actor, matching the \"Your fund, open 24/7\" headline.",
+          "shotBefore": "shots/always-on/0-before.jpg",
+          "shotAfter": "shots/always-on/0-after.jpg"
+        },
+        {
+          "section": "What changes · H3",
+          "before": "Investors served on their schedule.",
+          "after": "Service at institutional pace.",
+          "tier": "tighten",
+          "why": "The benefit to the fund is the one the body ends on: sophisticated investors notice a fund that keeps up with them.",
+          "shotBefore": "shots/always-on/1-before.jpg",
+          "shotAfter": "shots/always-on/1-after.jpg"
+        }
+      ]
+    },
+    {
+      "id": "instant-settlement",
+      "group": "Superpowers",
+      "name": "Instant Settlement",
+      "path": "/product/superpowers/instant-settlement",
+      "changes": []
+    },
+    {
+      "id": "automated-compliance",
+      "group": "Superpowers",
+      "name": "Automated Compliance",
+      "path": "/product/superpowers/automated-compliance",
+      "changes": []
+    },
+    {
+      "id": "overview",
+      "group": "Product",
+      "name": "Overview",
+      "path": "/product",
+      "changes": [
+        {
+          "section": "Superpowers · Liquidity card · H2",
+          "before": "Turn a locked position into a source of liquidity",
+          "after": "Offer liquidity without losing the capital",
+          "tier": "tighten",
+          "why": "\"A locked position\" is the investor's holding. The sibling cards (\"Open more markets\", \"Cut cost and administration\") are issuer outcomes, so this one should be too.",
+          "shotBefore": "shots/overview/0-before.jpg",
+          "shotAfter": "shots/overview/0-after.jpg",
+          "tab": "Liquidity"
+        },
+        {
+          "section": "Superpowers · Liquidity card · body",
+          "before": "Investors can borrow against their holdings without exiting the position, or exit without waiting for a redemption window. Continuous pricing and 24/7 settlement change what your asset is worth.",
+          "after": "Let investors borrow against their holdings or exit between redemption windows, while the capital stays in your fund. Continuous pricing and 24/7 settlement change what your asset is worth.",
+          "tier": "tighten",
+          "why": "Leads with what the issuer offers and adds the issuer outcome (capital retained) that both liquidity superpowers deliver.",
+          "shotBefore": "shots/overview/1-before.jpg",
+          "shotAfter": "shots/overview/1-after.jpg",
+          "tab": "Liquidity"
+        }
+      ]
+    },
+    {
+      "id": "distribution",
+      "group": "Product",
+      "name": "Distribution",
+      "path": "/product/distribution",
+      "changes": [
+        {
+          "section": "Benefits · Transact · Atomic settlement",
+          "before": "Investors transact directly with asset issuers, other investors or protocols. Settlement is instant. T+0 is the new normal.",
+          "after": "Your investors transact directly with you, with each other or with protocols. Settlement is instant. T+0 is the new normal.",
+          "tier": "break",
+          "why": "\"With asset issuers\" is written from the investor's side and makes the reader (the issuer) a third party. The issuer is \"you\".",
+          "shotBefore": "shots/distribution/0-before.jpg",
+          "shotAfter": "shots/distribution/0-after.jpg"
+        },
+        {
+          "section": "Look-through · body",
+          "before": "No more reconciling across siloed systems. Investors see the full structure of their asset in one place, with the status of your asset in real time and transparent, open rules that govern the asset.",
+          "after": "No more reconciling across siloed systems. Show investors the full structure of your asset in one place: its live status, and the open rules that govern it.",
+          "tier": "tighten",
+          "why": "The original switches from \"their asset\" to \"your asset\" in one sentence. The rewrite keeps the asset the issuer's and makes visibility something the issuer gives.",
+          "shotBefore": "shots/distribution/1-before.jpg",
+          "shotAfter": "shots/distribution/1-after.jpg"
+        },
+        {
+          "section": "Benefits · Custody · body",
+          "before": "Investors hold their own position directly. Fewer layers between the asset and its owner means lower cost and more control.",
+          "after": "Let investors hold their positions directly. Fewer layers between your asset and its holders means lower cost for you and more control for them.",
+          "tier": "tighten",
+          "why": "\"Its owner\" means the investor. The rewrite names who gets which benefit, and the issuer's lower cost comes first.",
+          "shotBefore": "shots/distribution/2-before.jpg",
+          "shotAfter": "shots/distribution/2-after.jpg"
+        },
+        {
+          "section": "Superpowers · Real-Time Transparency card",
+          "before": "Investors see the live status of their holdings and the rules that govern them.",
+          "after": "Show investors the live status of their holdings and the rules that govern them.",
+          "tier": "tighten",
+          "why": "Matches the Always-On card next to it (\"Your asset is open…\"), so the issuer is the actor.",
+          "shotBefore": "shots/distribution/3-before.jpg",
+          "shotAfter": "shots/distribution/3-after.jpg"
+        }
+      ]
+    },
+    {
+      "id": "liquidity",
+      "group": "Product",
+      "name": "Liquidity",
+      "path": "/product/liquidity",
+      "changes": [
+        {
+          "section": "Borrow · bullet",
+          "before": "Borrow against your holdings in real time",
+          "after": "Let investors borrow against their units in real time",
+          "tier": "break",
+          "why": "\"Your holdings\" addresses the investor directly. This is the same issue as the Collateral Mobility hero.",
+          "shotBefore": "shots/liquidity/0-before.jpg",
+          "shotAfter": "shots/liquidity/0-after.jpg"
+        },
+        {
+          "section": "Markets on demand · Tokeniser · Secondary markets",
+          "before": "Trade around the clock, without waiting for a window.",
+          "after": "Let investors trade around the clock, without waiting for a window.",
+          "tier": "break",
+          "why": "This is an instruction to the investor. The issuer doesn't trade its own units here; it offers the trading.",
+          "shotBefore": "shots/liquidity/1-before.jpg",
+          "shotAfter": "shots/liquidity/1-after.jpg"
+        },
+        {
+          "section": "Markets on demand · Tokeniser · Borrow against holdings",
+          "before": "Unlock liquidity without exiting the position.",
+          "after": "Let investors unlock cash without exiting the position.",
+          "tier": "break",
+          "why": "This is an instruction to the investor (whose position is being exited). The rewrite makes it a feature the issuer offers.",
+          "shotBefore": "shots/liquidity/2-before.jpg",
+          "shotAfter": "shots/liquidity/2-after.jpg"
+        },
+        {
+          "section": "Markets on demand · Traditional · Redemption windows",
+          "before": "Exit only when the fund opens a window. Capital sits idle between dates.",
+          "after": "Investors can exit only when you open a window. Capital sits idle between dates.",
+          "tier": "tighten",
+          "why": "This is written as an instruction to the investor, and \"the fund\" means the reader. Changing it to \"you\" keeps the issuer as the reader.",
+          "shotBefore": "shots/liquidity/3-before.jpg",
+          "shotAfter": "shots/liquidity/3-after.jpg"
+        },
+        {
+          "section": "Borrow · body",
+          "before": "Investors can put their assets to work as collateral at any hour, unlocking liquidity. It is capital that earns its keep, always.",
+          "after": "Let investors put their units to work as collateral at any hour, so they unlock cash without redeeming and your capital stays in.",
+          "tier": "tighten",
+          "why": "\"Capital that earns its keep\" is an investor benefit. The issuer's benefit is retained capital.",
+          "shotBefore": "shots/liquidity/4-before.jpg",
+          "shotAfter": "shots/liquidity/4-after.jpg"
+        },
+        {
+          "section": "Borrow · bullet",
+          "before": "No need to exit positions for liquidity",
+          "after": "Liquidity for investors, without redemptions",
+          "tier": "tighten",
+          "why": "\"Exit positions\" is the investor's frame. \"Without redemptions\" is the issuer's outcome.",
+          "shotBefore": "shots/liquidity/5-before.jpg",
+          "shotAfter": "shots/liquidity/5-after.jpg"
+        },
+        {
+          "section": "Superpowers · Secondary Transfer card",
+          "before": "Investors can trade their holdings around the clock, without waiting for a redemption window.",
+          "after": "Let investors trade their holdings around the clock, without waiting for a redemption window.",
+          "tier": "tighten",
+          "why": "Makes the issuer the actor, so it reads the same as the other superpower cards.",
+          "shotBefore": "shots/liquidity/6-before.jpg",
+          "shotAfter": "shots/liquidity/6-after.jpg"
+        },
+        {
+          "section": "Superpowers · Collateral Mobility card",
+          "before": "Investors can borrow against their holdings without exiting the position.",
+          "after": "Let investors borrow against their holdings while the capital stays in your fund.",
+          "tier": "tighten",
+          "why": "Adds the issuer outcome, consistent with the new Collateral Mobility hero.",
+          "shotBefore": "shots/liquidity/7-before.jpg",
+          "shotAfter": "shots/liquidity/7-after.jpg"
+        }
+      ]
+    },
+    {
+      "id": "efficiency",
+      "group": "Product",
+      "name": "Efficiency",
+      "path": "/product/efficiency",
+      "changes": []
+    },
+    {
+      "id": "getting-started",
+      "group": "Product",
+      "name": "Getting Started",
+      "path": "/product/getting-started",
+      "changes": []
+    }
+  ],
+  "otherNotes": [
+    {
+      "title": "Duplicate hero CTAs on Real-Time Transparency",
+      "page": "/product/superpowers/real-time-transparency",
+      "detail": "The hero shows \"Book a demo\" and \"Book a Demo\" side by side, two buttons with the same action and different casing. The other Superpowers pages pair a resource CTA (briefs, Readiness Index or Impact Calculator) with Book a Demo.",
+      "suggestion": "Change the primary CTA to \"Check your readiness\" (this page's bottom block is the Readiness Index) and keep \"Book a Demo\" as the secondary."
+    },
+    {
+      "title": "\"Your fund\" vs. the wider issuer audience",
+      "page": "All Superpowers pages",
+      "detail": "The Overview says Tokeniser covers \"funds, equities, loans and notes\" and the Distribution page mentions \"company shares\", but every Superpowers page speaks only to a fund (\"What changes for your fund\", \"your fund's rules\").",
+      "suggestion": "Decide the default issuer noun. Either keep \"fund\" as the hero persona for Superpowers on purpose, or use \"your fund or asset\" in the section headers. This is a positioning decision, not a copy fix."
+    },
+    {
+      "title": "Inconsistent CTA block across Superpowers pages",
+      "page": "All Superpowers pages",
+      "detail": "The bottom block varies: Always-On, Collateral Mobility and Secondary Transfer use \"Three briefs\"; Real-Time Transparency and Automated Compliance use the Readiness Index; Instant Settlement uses the Impact Calculator. Also, Collateral Mobility and Secondary Transfer say \"Get ready now / Set up today\" while the others say \"Get started now / Start without changing everything\".",
+      "suggestion": "This is probably intentional (the ready/started split matches features that are live vs. switch-on later). Confirm the mapping is deliberate."
+    },
+    {
+      "title": "No meta descriptions or link-preview text",
+      "page": "All 11 pages",
+      "detail": "None of the pages has a <meta name=\"description\"> or og:description. Only Always-On has og:title, and only /product and /product/liquidity have og:url. Search results and Slack or LinkedIn previews will pull arbitrary page text, which could be investor-voiced lines like the old Collateral Mobility hero.",
+      "suggestion": "Add issuer-lens descriptions. Drafts are in the table below."
+    }
+  ],
+  "metaDrafts": [
+    {
+      "path": "/product",
+      "description": "A registry with superpowers for funds and companies: open more markets, offer new liquidity and cut administration, under your existing licence."
+    },
+    {
+      "path": "/product/distribution",
+      "description": "Reach investors directly and lower your cost of capital, with a white-label investor portal and compliant, direct-to-investor rails."
+    },
+    {
+      "path": "/product/liquidity",
+      "description": "Offer secondary transfers, borrowing against units and instant settlement under your existing licence, while capital stays in your fund."
+    },
+    {
+      "path": "/product/efficiency",
+      "description": "Cut registry cost and administration with T+0 settlement, a self-updating register and compliance checks built into every transaction."
+    },
+    {
+      "path": "/product/getting-started",
+      "description": "Adopt tokenisation in stages alongside your current registry, guided by practitioners, without a big-bang transformation project."
+    },
+    {
+      "path": "/product/superpowers/always-on",
+      "description": "Keep your fund open 24/7 so investors in every time zone can subscribe, transfer and settle, with your rules checked every time."
+    },
+    {
+      "path": "/product/superpowers/real-time-transparency",
+      "description": "A self-updating register and branded investor portal that show every holding live, cutting reconciliation and investor queries."
+    },
+    {
+      "path": "/product/superpowers/secondary-transfer",
+      "description": "Give investors an exit between redemption windows through transfers to eligible investors, without drawing on your fund's capital."
+    },
+    {
+      "path": "/product/superpowers/collateral-mobility",
+      "description": "Let investors borrow against their units instead of redeeming, so your fund keeps the capital. You approve the lenders and set the terms."
+    },
+    {
+      "path": "/product/superpowers/instant-settlement",
+      "description": "Move your fund from T+2 to T+0. Cash and units swap in one step, so capital goes to work immediately and there is nothing to reconcile."
+    },
+    {
+      "path": "/product/superpowers/automated-compliance",
+      "description": "Build eligibility, holder limits and transfer rules into every transaction, so non-compliant trades cannot happen and every check is logged."
+    }
+  ]
+}

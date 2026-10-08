@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Issuer Lens Copy Audit</title>
+<meta name="description" content="Before/after copy audit of Tokeniser's Product and Superpowers pages, reframed for the asset issuer.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f6f8; --surface:#fff; --ink:#2f3240; --muted:#6b6f7e; --line:#e2e4ea;
+  --mint:#a8f5c8; --mint-ink:#0f6b3d; --mint-bg:#e9fbf0;
+  --red-ink:#a3262a; --red-bg:#fdecec; --amber-ink:#8a5a00; --amber-bg:#fff4dc;
+  --hero:#2f3240; --hero-ink:#fff;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#16171d; --surface:#1f2129; --ink:#e8e9ee; --muted:#9a9eae; --line:#2f323d;
+    --mint-ink:#8ff0b8; --mint-bg:#16301f; --red-ink:#ff9a9a; --red-bg:#3a1c1e;
+    --amber-ink:#ffcf70; --amber-bg:#3a2e12; --hero:#0f1015;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16171d; --surface:#1f2129; --ink:#e8e9ee; --muted:#9a9eae; --line:#2f323d;
+  --mint-ink:#8ff0b8; --mint-bg:#16301f; --red-ink:#ff9a9a; --red-bg:#3a1c1e;
+  --amber-ink:#ffcf70; --amber-bg:#3a2e12; --hero:#0f1015;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 Montserrat,system-ui,sans-serif}
+a{color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+header.hero{background:var(--hero);color:var(--hero-ink);padding:56px 0 44px}
+.kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--mint)}
+.bar{width:48px;height:4px;border-radius:2px;background:var(--mint);margin-bottom:16px}
+h1{font-size:clamp(28px,5vw,46px);line-height:1.12;margin:10px 0 14px;font-weight:700}
+h1 em{color:var(--mint);font-style:italic}
+.hero p{max-width:760px;color:#c9ccd6;margin:0 0 10px}
+.hero a{color:var(--mint)}
+.rule{margin-top:26px;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.rule div{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:10px;padding:14px 16px;font-size:14px;color:#dfe1e8}
+.rule b{color:#fff;display:block;margin-bottom:4px}
+nav.toc{position:sticky;top:0;z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:6px;align-items:center;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:none}
+nav.toc a{white-space:nowrap;text-decoration:none;font-size:13px;font-weight:500;padding:6px 10px;border-radius:999px;color:var(--muted)}
+nav.toc a:hover{background:var(--bg);color:var(--ink)}
+nav.toc .grp{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:700;padding:0 4px 0 10px}
+.filters{display:flex;gap:6px;margin-left:auto;padding-left:12px}
+.filters button{font:inherit;font-size:13px;font-weight:600;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:6px 12px;border-radius:999px;cursor:pointer;white-space:nowrap}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--surface);border-color:var(--ink)}
+main{padding:36px 0 80px}
+h2{font-size:24px;margin:0 0 6px}
+.sec-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:56px 0 18px}
+.sec-h .meta{color:var(--muted);font-size:13px}
+table{width:100%;border-collapse:collapse;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;font-size:14px}
+th,td{text-align:left;padding:10px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+tr:last-child td{border-bottom:0}
+td.n{font-variant-numeric:tabular-nums;width:90px}
+.pill{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:3px 9px;border-radius:999px}
+.pill.break{background:var(--red-bg);color:var(--red-ink)}
+.pill.tighten{background:var(--amber-bg);color:var(--amber-ink)}
+.pill.ok{background:var(--mint-bg);color:var(--mint-ink)}
+.pill.asset{background:var(--line);color:var(--ink)}
+.page{margin-top:48px}
+.page-h{display:flex;gap:12px;align-items:center;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:18px}
+.page-h h3{font-size:22px;margin:0}
+.page-h .grp{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.page-h .sp{flex:1}
+.page-h a,.copy{font-size:13px;font-weight:600;text-decoration:none;border:1px solid var(--line);background:var(--surface);color:var(--ink);padding:6px 12px;border-radius:8px;cursor:pointer;font-family:inherit}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:18px}
+.card-h{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:12px}
+.loc{font-weight:600;font-size:14px}
+.num{font-size:12px;color:var(--muted);font-variant-numeric:tabular-nums}
+.diff{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.diff>div{border-radius:10px;padding:12px 14px;font-size:15px}
+.diff .lbl{display:block;font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;margin-bottom:4px}
+.b{background:var(--red-bg)} .b .lbl{color:var(--red-ink)} .b .t{text-decoration:line-through;text-decoration-color:color-mix(in srgb,var(--red-ink) 55%,transparent)}
+.a{background:var(--mint-bg)} .a .lbl{color:var(--mint-ink)} .a .t{font-weight:500}
+.why{margin:12px 0 0;color:var(--muted);font-size:14px}
+.why b{color:var(--ink)}
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.shots figure{margin:0}
+.shots figcaption{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--muted);margin-bottom:6px}
+.shots img{width:100%;display:block;border:1px solid var(--line);border-radius:8px;cursor:zoom-in;background:var(--bg)}
+.shots .todo{border:1px dashed var(--line);border-radius:8px;display:flex;align-items:center;justify-content:center;text-align:center;min-height:120px;height:calc(100% - 24px);padding:16px;color:var(--muted);font-size:13px}
+.pass{background:var(--surface);border:1px dashed var(--line);border-radius:14px;padding:18px;color:var(--muted)}
+.note{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px;margin-bottom:14px}
+.note h4{margin:0 0 4px;font-size:16px}
+.note .pg{font-size:12px;color:var(--muted);margin-bottom:8px}
+.note p{margin:6px 0}
+.hidden{display:none!important}
+dialog{border:0;padding:0;background:transparent;max-width:96vw;max-height:94vh}
+dialog::backdrop{background:rgba(10,10,15,.82)}
+dialog img{max-width:96vw;max-height:94vh;display:block;border-radius:8px}
+footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding:24px 0 48px}
+@media (max-width:720px){
+  .diff,.shots{grid-template-columns:1fr}
+  .filters{margin-left:0}
+  td.n{width:auto}
+  .hide-sm{display:none}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="bar"></div>
+    <div class="kicker">Website copy audit · Fix #1 · Product &amp; Superpowers</div>
+    <h1>Speak to the issuer,<br><em>not the investor.</em></h1>
+    <p>Lines on the Product and Superpowers pages slip into the investor's voice, as in the Collateral Mobility hero "Your holdings, no longer stuck." Our reader is the <b>service provider / asset issuer</b>. Below is every line that changes, with the live copy, the proposed copy, and screenshots of both rendered on the live page.</p>
+    <p>Audited against <a href="https://es-tokeniser-qa-website--pr-159-8p0z3ri2.web.app/product" target="_blank" rel="noopener">QA preview PR-159</a> on <span id="date"></span>. The "After" screenshots were made by swapping the proposed copy into the live page, so they show real fonts and line breaks.</p>
+    <div class="rule">
+      <div><b>"You" is the issuer.</b>"You/your" always means the fund, company or service provider. It never means the investor.</div>
+      <div><b>Issuer outcome first.</b>Headlines name what the issuer gets: capital retained, AUM grown, cost cut, edge won.</div>
+      <div><b>Investors are offered things.</b>Investor benefits are framed as what the issuer gives: "Let investors…", "Give investors…".</div>
+      <div><b>Voice unchanged.</b>Short headline plus italic second line, Australian spelling, same claims and numbers.</div>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Pages">
+  <div class="wrap" id="toc"></div>
+</nav>
+
+<main class="wrap">
+  <section>
+    <div class="sec-h" style="margin-top:0"><h2>Summary</h2><span class="meta" id="totals"></span></div>
+    <p style="margin:0 0 14px;color:var(--muted)"><span class="pill break">Must fix</span> "you/your" addresses the investor, or the line tells the investor what to do. &nbsp; <span class="pill tighten">Review</span> a third-person investor line, reworked so the issuer's outcome comes first.</p>
+    <table>
+      <thead><tr><th>Page</th><th class="hide-sm">Section</th><th>Must fix</th><th>Review</th></tr></thead>
+      <tbody id="summary"></tbody>
+    </table>
+  </section>
+
+  <div id="pages"></div>
+
+  <section id="other-notes">
+    <div class="sec-h"><h2>Other notes</h2><span class="meta">Not lens fixes. Flagged during the audit for the team to decide.</span></div>
+    <div id="notes"></div>
+    <h3 style="margin:28px 0 10px;font-size:17px">Draft meta descriptions (issuer lens)</h3>
+    <table><thead><tr><th>Page</th><th>Proposed &lt;meta name="description"&gt;</th></tr></thead><tbody id="metas"></tbody></table>
+  </section>
+</main>
+
+<footer><div class="wrap">Source data: <a href="changes.json">changes.json</a> · Screenshots regenerated with <code>node scripts/shoot.mjs</code> · Live pages may have changed since the audit date.</div></footer>
+
+<dialog id="zoom"><img alt=""></dialog>
+
+<script>
+const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+const plain = (html) => { const d = document.createElement('div'); d.innerHTML = html; return d.textContent; };
+const label = { break: 'Must fix', tighten: 'Review' };
+
+fetch('changes.json').then((r) => r.json()).then((data) => {
+  document.getElementById('date').textContent = new Date(data.audited).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
+  const pages = data.pages;
+  const count = (p, t) => p.changes.filter((c) => c.tier === t).length;
+
+  // Nav
+  const toc = document.getElementById('toc');
+  let html = '';
+  for (const g of ['Superpowers', 'Product']) {
+    html += `<span class="grp">${g}</span>`;
+    for (const p of pages.filter((p) => p.group === g)) html += `<a href="#${p.id}">${esc(p.name)}</a>`;
+  }
+  html += `<a href="#other-notes">Other notes</a><div class="filters" role="group" aria-label="Filter">
+    <button data-f="all" aria-pressed="true">All</button><button data-f="break" aria-pressed="false">Must fix</button><button data-f="tighten" aria-pressed="false">Review</button></div>`;
+  toc.innerHTML = html;
+
+  // Summary
+  const tb = document.getElementById('summary');
+  let tb_html = '', nb = 0, nt = 0;
+  for (const p of pages) {
+    const b = count(p, 'break'), t = count(p, 'tighten'); nb += b; nt += t;
+    tb_html += `<tr><td><a href="#${p.id}">${esc(p.name)}</a>${b + t === 0 ? ' <span class="pill ok">Passes</span>' : ''}</td><td class="hide-sm">${p.group}</td><td class="n">${b || '–'}</td><td class="n">${t || '–'}</td></tr>`;
+  }
+  tb.innerHTML = tb_html;
+  document.getElementById('totals').textContent = `${nb + nt} changes across ${pages.length} pages · ${nb} must fix · ${nt} review`;
+
+  // Pages
+  const out = document.getElementById('pages');
+  for (const p of pages) {
+    const url = data.base + p.path;
+    let s = `<section class="page" id="${p.id}"><div class="page-h"><span class="grp">${p.group}</span><h3>${esc(p.name)}</h3><span class="sp"></span>
+      <a href="${url}" target="_blank" rel="noopener">Open live page ↗</a>${p.changes.length ? `<button class="copy" data-page="${p.id}">Copy edits</button>` : ''}</div>`;
+    if (!p.changes.length) s += `<div class="pass">Already issuer-led. No lens changes proposed.</div>`;
+    p.changes.forEach((c, i) => {
+      s += `<article class="card" data-tier="${c.tier}">
+        <div class="card-h"><span class="pill ${c.tier}">${label[c.tier]}</span>${c.asset ? '<span class="pill asset">Image asset</span>' : ''}<span class="loc">${esc(c.section)}</span><span class="num">${p.name} #${i + 1}</span></div>
+        <div class="diff"><div class="b"><span class="lbl">Before (live)</span><span class="t">${esc(c.before)}</span></div>
+        <div class="a"><span class="lbl">After (proposed)</span><span class="t">${c.asset ? esc(c.after) : c.after}</span></div></div>
+        <p class="why"><b>Why:</b> ${esc(c.why)}</p>
+        <div class="shots">
+          <figure><figcaption>Before</figcaption><img loading="lazy" src="${c.shotBefore}" alt="Live: ${esc(c.section)}"></figure>
+          <figure><figcaption>After</figcaption>${c.shotAfter ? `<img loading="lazy" src="${c.shotAfter}" alt="Proposed: ${esc(c.section)}">` : `<div class="todo">This text is part of the image, so a designer has to re-export it. See the proposed text above.</div>`}</figure>
+        </div></article>`;
+    });
+    out.insertAdjacentHTML('beforeend', s + '</section>');
+  }
+
+  // Notes and meta drafts
+  document.getElementById('notes').innerHTML = data.otherNotes.map((n) => `<div class="note"><h4>${esc(n.title)}</h4><div class="pg">${esc(n.page)}</div><p>${esc(n.detail)}</p><p><b>Suggestion:</b> ${esc(n.suggestion)}</p></div>`).join('');
+  document.getElementById('metas').innerHTML = data.metaDrafts.map((m) => `<tr><td><a href="${data.base + m.path}" target="_blank" rel="noopener">${esc(m.path)}</a></td><td>${esc(m.description)}</td></tr>`).join('');
+
+  // Filter
+  toc.querySelectorAll('.filters button').forEach((btn) => btn.addEventListener('click', () => {
+    toc.querySelectorAll('.filters button').forEach((b) => b.setAttribute('aria-pressed', b === btn));
+    const f = btn.dataset.f;
+    document.querySelectorAll('.card').forEach((c) => c.classList.toggle('hidden', f !== 'all' && c.dataset.tier !== f));
+  }));
+
+  // Copy edits for a page
+  out.addEventListener('click', async (e) => {
+    const btn = e.target.closest('.copy'); if (!btn) return;
+    const p = pages.find((x) => x.id === btn.dataset.page);
+    const txt = `${p.name} (${data.base + p.path})\n\n` + p.changes.map((c, i) =>
+      `#${i + 1} [${label[c.tier]}] ${c.section}\nBEFORE: ${c.before}\nAFTER:  ${plain(c.after)}`).join('\n\n');
+    try { await navigator.clipboard.writeText(txt); btn.textContent = 'Copied ✓'; } catch { btn.textContent = 'Copy failed'; }
+    setTimeout(() => (btn.textContent = 'Copy edits'), 1800);
+  });
+
+  // Zoom screenshots
+  const dlg = document.getElementById('zoom');
+  out.addEventListener('click', (e) => {
+    if (e.target.matches('.shots img')) { dlg.querySelector('img').src = e.target.src; dlg.showModal(); }
+  });
+  dlg.addEventListener('click', () => dlg.close());
+});
+</script>
+</body>
+</html>
