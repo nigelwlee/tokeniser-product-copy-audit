@@ -63,7 +63,7 @@ for (const page of data.pages) {
 
   const shoot = async (i, suffix) => {
     const tab = page.changes[i].tab;
-    if (tab) await p.getByRole('button', { name: tab, exact: true }).click();
+    if (tab) await p.locator('button:visible', { hasText: tab }).first().click();
     const sec = p.locator(`[data-sec-${i}]`).first();
     await sec.scrollIntoViewIfNeeded();
     await p.waitForTimeout(400);
@@ -79,7 +79,7 @@ for (const page of data.pages) {
       const box = await sec.boundingBox();
       const el = await p.locator(`[data-chg="${i}"]`).boundingBox();
       const w = Math.min(box.width, Math.max(el.width + 120, 820));
-      const x = Math.max(box.x, Math.min(el.x - 60, box.x + box.width - w));
+      const x = Math.max(box.x, 0, Math.min(el.x + el.width / 2 - w / 2, box.x + box.width - w));
       const y = Math.max(box.y, el.y - 160, 0);
       const h = Math.min(box.y + box.height, el.y + el.height + 160, 900) - y;
       await p.screenshot({ path, type: 'jpeg', quality: 85, clip: { x, y, width: w, height: h } });

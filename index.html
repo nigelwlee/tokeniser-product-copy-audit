@@ -16,6 +16,7 @@
   --hero:#2f3240; --hero-ink:#fff;
 }
 @media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]) .pill.style{background:#1f2747;color:#a9b8ff}
   :root:not([data-theme="light"]){
     --bg:#16171d; --surface:#1f2129; --ink:#e8e9ee; --muted:#9a9eae; --line:#2f323d;
     --mint-ink:#8ff0b8; --mint-bg:#16301f; --red-ink:#ff9a9a; --red-bg:#3a1c1e;
@@ -64,6 +65,10 @@ td.n{font-variant-numeric:tabular-nums;width:90px}
 .pill.tighten{background:var(--amber-bg);color:var(--amber-ink)}
 .pill.ok{background:var(--mint-bg);color:var(--mint-ink)}
 .pill.asset{background:var(--line);color:var(--ink)}
+.pill.style{background:#e6ecff;color:#2b45a8}
+.tag{font-size:11px;font-weight:600;color:var(--muted);border:1px solid var(--line);padding:2px 8px;border-radius:999px}
+.rules{margin:0 0 14px;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:13px;color:var(--muted)}
+.rules b{color:var(--ink)}
 .page{margin-top:48px}
 .page-h{display:flex;gap:12px;align-items:center;flex-wrap:wrap;border-bottom:2px solid var(--ink);padding-bottom:10px;margin-bottom:18px}
 .page-h h3{font-size:22px;margin:0}
@@ -121,9 +126,15 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
 <main class="wrap">
   <section>
     <div class="sec-h" style="margin-top:0"><h2>Summary</h2><span class="meta" id="totals"></span></div>
-    <p style="margin:0 0 14px;color:var(--muted)"><span class="pill break">Must fix</span> "you/your" addresses the investor, or the line tells the investor what to do. &nbsp; <span class="pill tighten">Review</span> a third-person investor line, reworked so the issuer's outcome comes first.</p>
+    <p style="margin:0 0 10px;color:var(--muted)"><span class="pill break">Must fix</span> "you/your" addresses the investor, or the line tells the investor what to do. &nbsp; <span class="pill tighten">Review</span> a third-person investor line, reworked so the issuer's outcome comes first. &nbsp; <span class="pill style">Style</span> breaks a copy rule below.</p>
+    <ul class="rules">
+      <li><b>Lens:</b> "you" is always the issuer</li>
+      <li><b>No contractions:</b> "cannot", not "can't"</li>
+      <li><b>Short &amp; simple:</b> body text is 2 sentences max</li>
+      <li><b>No AI tells:</b> "not X, just Y" contrasts, clipped fragments, filler like "simply"</li>
+    </ul>
     <table>
-      <thead><tr><th>Page</th><th class="hide-sm">Section</th><th>Must fix</th><th>Review</th></tr></thead>
+      <thead><tr><th>Page</th><th class="hide-sm">Section</th><th>Must fix</th><th>Review</th><th>Style</th></tr></thead>
       <tbody id="summary"></tbody>
     </table>
   </section>
@@ -145,7 +156,7 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
 <script>
 const esc = (s) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 const plain = (html) => { const d = document.createElement('div'); d.innerHTML = html; return d.textContent; };
-const label = { break: 'Must fix', tighten: 'Review' };
+const label = { break: 'Must fix', tighten: 'Review', style: 'Style' };
 
 fetch('changes.json').then((r) => r.json()).then((data) => {
   const pages = data.pages;
@@ -159,18 +170,18 @@ fetch('changes.json').then((r) => r.json()).then((data) => {
     for (const p of pages.filter((p) => p.group === g)) html += `<a href="#${p.id}">${esc(p.name)}</a>`;
   }
   html += `<a href="#other-notes">Other notes</a><div class="filters" role="group" aria-label="Filter">
-    <button data-f="all" aria-pressed="true">All</button><button data-f="break" aria-pressed="false">Must fix</button><button data-f="tighten" aria-pressed="false">Review</button></div>`;
+    <button data-f="all" aria-pressed="true">All</button><button data-f="break" aria-pressed="false">Must fix</button><button data-f="tighten" aria-pressed="false">Review</button><button data-f="style" aria-pressed="false">Style</button></div>`;
   toc.innerHTML = html;
 
   // Summary
   const tb = document.getElementById('summary');
-  let tb_html = '', nb = 0, nt = 0;
+  let tb_html = '', nb = 0, nt = 0, ns = 0;
   for (const p of pages) {
-    const b = count(p, 'break'), t = count(p, 'tighten'); nb += b; nt += t;
-    tb_html += `<tr><td><a href="#${p.id}">${esc(p.name)}</a>${b + t === 0 ? ' <span class="pill ok">Passes</span>' : ''}</td><td class="hide-sm">${p.group}</td><td class="n">${b || '–'}</td><td class="n">${t || '–'}</td></tr>`;
+    const b = count(p, 'break'), t = count(p, 'tighten'), st = count(p, 'style'); nb += b; nt += t; ns += st;
+    tb_html += `<tr><td><a href="#${p.id}">${esc(p.name)}</a>${b + t + st === 0 ? ' <span class="pill ok">Passes</span>' : ''}</td><td class="hide-sm">${p.group}</td><td class="n">${b || '–'}</td><td class="n">${t || '–'}</td><td class="n">${st || '–'}</td></tr>`;
   }
   tb.innerHTML = tb_html;
-  document.getElementById('totals').textContent = `${nb + nt} changes across ${pages.length} pages · ${nb} must fix · ${nt} review`;
+  document.getElementById('totals').textContent = `${nb + nt + ns} changes across ${pages.length} pages · ${nb} must fix · ${nt} review · ${ns} style`;
 
   // Pages
   const out = document.getElementById('pages');
@@ -181,7 +192,7 @@ fetch('changes.json').then((r) => r.json()).then((data) => {
     if (!p.changes.length) s += `<div class="pass">Already issuer-led. No lens changes proposed.</div>`;
     p.changes.forEach((c, i) => {
       s += `<article class="card" data-tier="${c.tier}">
-        <div class="card-h"><span class="pill ${c.tier}">${label[c.tier]}</span>${c.asset ? '<span class="pill asset">Image asset</span>' : ''}<span class="loc">${esc(c.section)}</span><span class="num">${p.name} #${i + 1}</span></div>
+        <div class="card-h"><span class="pill ${c.tier}">${label[c.tier]}</span>${c.asset ? '<span class="pill asset">Image asset</span>' : ''}${(c.rules || []).map((r) => `<span class="tag">${data.rules[r]}</span>`).join('')}<span class="loc">${esc(c.section)}</span><span class="num">${p.name} #${i + 1}</span></div>
         <div class="diff"><div class="b"><span class="lbl">Before (live)</span><span class="t">${esc(c.before)}</span></div>
         <div class="a"><span class="lbl">After (proposed)</span><span class="t">${c.asset ? esc(c.after) : c.after}</span></div></div>
         <p class="why"><b>Why:</b> ${esc(c.why)}</p>
