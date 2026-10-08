@@ -69,14 +69,20 @@ for (const page of data.pages) {
     await p.waitForTimeout(400);
     const box = await sec.boundingBox();
     const path = `shots/${page.id}/${i}-${suffix}.jpg`;
-    // Cap very tall sections at a window around the changed element.
-    if (box.height > 1100) {
-      const el = await p.locator(`[data-chg="${i}"]`).boundingBox();
-      const y = Math.max(box.y, el.y - 300);
-      await p.screenshot({ path, type: 'jpeg', quality: 85, fullPage: true,
-        clip: { x: box.x, y, width: box.width, height: Math.min(900, box.y + box.height - y) } });
-    } else {
+    const isHero = await sec.evaluate((el) => /hero/.test(el.className));
+    if (isHero || page.changes[i].asset) {
       await sec.screenshot({ path, type: 'jpeg', quality: 85 });
+    } else {
+      // Crop tightly around the changed text (plus context) so it reads at thumbnail size.
+      await p.locator(`[data-chg="${i}"]`).evaluate((e) => e.scrollIntoView({ block: 'center' }));
+      await p.waitForTimeout(200);
+      const box = await sec.boundingBox();
+      const el = await p.locator(`[data-chg="${i}"]`).boundingBox();
+      const w = Math.min(box.width, Math.max(el.width + 120, 820));
+      const x = Math.max(box.x, Math.min(el.x - 60, box.x + box.width - w));
+      const y = Math.max(box.y, el.y - 160, 0);
+      const h = Math.min(box.y + box.height, el.y + el.height + 160, 900) - y;
+      await p.screenshot({ path, type: 'jpeg', quality: 85, clip: { x, y, width: w, height: h } });
     }
     return path;
   };
