@@ -32,7 +32,7 @@ html{scroll-behavior:smooth;scroll-padding-top:72px}
 body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 Montserrat,system-ui,sans-serif}
 a{color:inherit}
 .wrap{max-width:1180px;margin:0 auto;padding:0 16px}
-header.hero{background:var(--hero);color:var(--hero-ink);padding:56px 0 44px}
+header.hero{background:var(--hero);color:var(--hero-ink);padding:24px 0 22px}
 .kicker{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--mint)}
 .bar{width:48px;height:4px;border-radius:2px;background:var(--mint);margin-bottom:16px}
 h1{font-size:clamp(28px,5vw,46px);line-height:1.12;margin:10px 0 14px;font-weight:700}
@@ -111,15 +111,6 @@ footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);paddin
   <div class="wrap">
     <div class="bar"></div>
     <div class="kicker">Website copy audit · Fix #1 · Product &amp; Superpowers</div>
-    <h1>Speak to the issuer,<br><em>not the investor.</em></h1>
-    <p>Lines on the Product and Superpowers pages slip into the investor's voice, as in the Collateral Mobility hero "Your holdings, no longer stuck." Our reader is the <b>service provider / asset issuer</b>. Below is every line that changes, with the live copy, the proposed copy, and screenshots of both rendered on the live page.</p>
-    <p>Audited against <a href="https://es-tokeniser-qa-website--pr-159-8p0z3ri2.web.app/product" target="_blank" rel="noopener">QA preview PR-159</a> on <span id="date"></span>. The "After" screenshots were made by swapping the proposed copy into the live page, so they show real fonts and line breaks.</p>
-    <div class="rule">
-      <div><b>"You" is the issuer.</b>"You/your" always means the fund, company or service provider. It never means the investor.</div>
-      <div><b>Issuer outcome first.</b>Headlines name what the issuer gets: capital retained, AUM grown, cost cut, edge won.</div>
-      <div><b>Investors are offered things.</b>Investor benefits are framed as what the issuer gives: "Let investors…", "Give investors…".</div>
-      <div><b>Voice unchanged.</b>Short headline plus italic second line, Australian spelling, same claims and numbers.</div>
-    </div>
   </div>
 </header>
 
@@ -157,7 +148,6 @@ const plain = (html) => { const d = document.createElement('div'); d.innerHTML =
 const label = { break: 'Must fix', tighten: 'Review' };
 
 fetch('changes.json').then((r) => r.json()).then((data) => {
-  document.getElementById('date').textContent = new Date(data.audited).toLocaleDateString('en-AU', { day: 'numeric', month: 'long', year: 'numeric' });
   const pages = data.pages;
   const count = (p, t) => p.changes.filter((c) => c.tier === t).length;
 
