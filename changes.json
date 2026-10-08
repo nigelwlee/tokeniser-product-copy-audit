@@ -11,11 +11,12 @@
         {
           "section": "Hero · H1",
           "before": "Your holdings, no longer stuck.",
-          "after": "Keep the capital, <em>even when investors need cash.</em>",
+          "after": "Retain capital, <em>even when investors need liquidity.</em>",
           "tier": "break",
-          "why": "\"Your holdings\" addresses the investor. The subtitle underneath already speaks to the fund (\"your fund keeps the capital\"), so the headline should land the same issuer outcome.",
+          "why": "\"Your holdings\" addresses the investor. The rewrite states the issuer outcome in measured terms.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/collateral-mobility/0-before.jpg",
           "shotAfter": "shots/collateral-mobility/0-after.jpg"
@@ -23,12 +24,13 @@
         {
           "section": "The problem today · body",
           "before": "When an investor in a private fund needs cash, redeeming is usually the only option. Their units cannot easily be used as security for a loan, because lenders cannot hold or move them quickly. So the investor leaves, and your fund loses the capital.",
-          "after": "When your investors need cash, redemption is usually their only option, because lenders cannot easily hold or move fund units as security. So the investor leaves, and the capital leaves with them.",
+          "after": "When your investors need liquidity, redemption is often the only option. This risks losing capital from your fund.",
           "tier": "tighten",
-          "why": "Leads with the fund's cost instead of the investor's predicament, and cuts three sentences to two. The facts are unchanged.",
+          "why": "Leads with the fund's exposure, in two measured sentences.",
           "rules": [
             "lens",
-            "length"
+            "length",
+            "tone"
           ],
           "shotBefore": "shots/collateral-mobility/1-before.jpg",
           "shotAfter": "shots/collateral-mobility/1-after.jpg"
@@ -36,11 +38,12 @@
         {
           "section": "What changes · Fewer redemptions",
           "before": "Investors who need cash can borrow against their units instead of selling them. They stay invested, and your AUM stays put.",
-          "after": "Let investors who need cash borrow against their units instead of redeeming. They stay invested, and your AUM stays put.",
+          "after": "Enable investors to borrow against their units rather than redeem. They remain invested, and your AUM is retained.",
           "tier": "tighten",
           "why": "Frames the feature as something the fund offers. \"Redeeming\" is more accurate for fund units than \"selling\".",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/collateral-mobility/2-before.jpg",
           "shotAfter": "shots/collateral-mobility/2-after.jpg"
@@ -48,12 +51,13 @@
         {
           "section": "How it works · body",
           "before": "An investor pledges their units to an approved lender. The units are held as security and cannot be sold or transferred while the loan is open. When the loan is repaid, they are released straight back. You decide which lenders can take part and on what terms.",
-          "after": "You approve the lenders and set the terms. An investor pledges units as security, and the units stay locked until the loan is repaid.",
+          "after": "You approve the lenders and set the terms. Investors pledge units as security, and the units remain locked until the loan is repaid.",
           "tier": "tighten",
           "why": "Moves the issuer's control from the last sentence to the first, and cuts four sentences to two.",
           "rules": [
             "lens",
-            "length"
+            "length",
+            "tone"
           ],
           "shotBefore": "shots/collateral-mobility/3-before.jpg",
           "shotAfter": "shots/collateral-mobility/3-after.jpg"
@@ -62,25 +66,99 @@
           "section": "How it works · diagram (image asset)",
           "asset": "03-collateral-mobility",
           "before": "Today: Need cash? Sell units → Position exited · On Tokeniser: Units pledged → Loan funded → Repaid and released · \"Stay invested.\"",
-          "after": "Today: Investor needs cash → Units redeemed, capital leaves · On Tokeniser: Units pledged → Loan funded → Repaid and released · \"Capital stays in.\"",
+          "after": "Today: Liquidity need → Redemption, capital leaves the fund · On Tokeniser: Units pledged → Loan funded → Repaid and released · \"Capital retained.\"",
           "tier": "break",
           "why": "The diagram's tagline \"Stay invested.\" and the question \"Need cash?\" both speak to the investor. This text is part of the image, so a designer needs to re-export the image (desktop and mobile versions) and update the alt text to match.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/collateral-mobility/4-before.jpg"
         },
         {
           "section": "Easier to raise into · body",
           "before": "Units that can be used as collateral are worth more to the investors who hold them. That makes your fund an easier allocation to justify.",
-          "after": "Units that work as collateral are worth more to investors, which makes your fund an easier allocation to justify.",
+          "after": "Units that can serve as collateral are more valuable to investors, which strengthens the case for allocating to your fund.",
           "tier": "style",
           "rules": [
-            "length"
+            "length",
+            "tone"
           ],
           "why": "Two sentences become one plain sentence with the same claim.",
           "shotBefore": "shots/collateral-mobility/5-before.jpg",
           "shotAfter": "shots/collateral-mobility/5-after.jpg"
+        },
+        {
+          "section": "Hero · subtitle",
+          "before": "Give your investors a way to raise cash without leaving your fund. Their units become collateral in minutes, and your fund keeps the capital.",
+          "after": "Give your investors access to liquidity without leaving your fund. Their units can be pledged as collateral in minutes, and your fund retains the capital.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "\"Raise cash\" and \"keeps the capital\" are conversational. \"Liquidity\" and \"retains\" are the terms an institutional reader expects.",
+          "shotBefore": "shots/collateral-mobility/6-before.jpg",
+          "shotAfter": "shots/collateral-mobility/6-after.jpg"
+        },
+        {
+          "section": "The problem today · H2",
+          "before": "Cash needed, fund redeemed",
+          "after": "Liquidity needs lead to redemptions",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/collateral-mobility/7-before.jpg",
+          "shotAfter": "shots/collateral-mobility/7-after.jpg"
+        },
+        {
+          "section": "What changes · H3",
+          "before": "Easier to raise into.",
+          "after": "Stronger capital raising.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "\"Raise into\" is industry slang. The rewrite names the outcome plainly.",
+          "shotBefore": "shots/collateral-mobility/8-before.jpg",
+          "shotAfter": "shots/collateral-mobility/8-after.jpg"
+        },
+        {
+          "section": "What changes · H3",
+          "before": "An investor-first fund.",
+          "after": "A competitive differentiator.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Names the issuer benefit, which the body describes.",
+          "shotBefore": "shots/collateral-mobility/9-before.jpg",
+          "shotAfter": "shots/collateral-mobility/9-after.jpg"
+        },
+        {
+          "section": "What changes · An investor-first fund · body",
+          "before": "Very few private funds let investors borrow against their units without redeeming. Offer it, and your fund has an edge when investors compare their options.",
+          "after": "Few private funds allow investors to borrow against their units without redeeming. Offering it differentiates your fund when investors compare options.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/collateral-mobility/10-before.jpg",
+          "shotAfter": "shots/collateral-mobility/10-after.jpg"
+        },
+        {
+          "section": "Get ready now · H2",
+          "before": "Set up today, switch on when you are ready",
+          "after": "Prepare now, activate when ready",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/collateral-mobility/11-before.jpg",
+          "shotAfter": "shots/collateral-mobility/11-after.jpg"
         }
       ]
     },
@@ -93,11 +171,12 @@
         {
           "section": "Hero · H1",
           "before": "Change hands, any day.",
-          "after": "Give investors an exit, <em>any day.</em>",
+          "after": "Offer investors an exit, <em>without a redemption.</em>",
           "tier": "break",
-          "why": "\"Change hands\" describes the investor's action. The issuer's value is offering the exit, which the rewrite says, keeping the \"any day\" payoff.",
+          "why": "\"Change hands\" describes the investor's action. The issuer's value is offering an exit that does not draw on the fund.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/secondary-transfer/0-before.jpg",
           "shotAfter": "shots/secondary-transfer/0-after.jpg"
@@ -105,11 +184,12 @@
         {
           "section": "Hero · subtitle",
           "before": "No redemption window needed. Investors can exit by transferring their position to another eligible investor, without touching the fund's capital.",
-          "after": "No redemption window needed. Let investors exit by transferring their position to another eligible investor, while your fund's capital stays put.",
+          "after": "Enable investors to exit between redemption windows by transferring their position to another eligible investor. Your fund's capital is unaffected.",
           "tier": "tighten",
           "why": "Makes this something the fund offers, and changes \"the fund's\" to \"your fund's\" so \"you\" is consistently the issuer.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/secondary-transfer/1-before.jpg",
           "shotAfter": "shots/secondary-transfer/1-after.jpg"
@@ -117,11 +197,12 @@
         {
           "section": "The problem today · H2",
           "before": "Locked in until the window opens",
-          "after": "Lock-ups that cost you investors",
+          "after": "Lock-up periods that deter investors",
           "tier": "tighten",
           "why": "\"Locked in\" is how the investor experiences it. The issuer's problem, which the body ends on, is investors who say no because of the lock-up.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/secondary-transfer/2-before.jpg",
           "shotAfter": "shots/secondary-transfer/2-after.jpg"
@@ -129,11 +210,12 @@
         {
           "section": "The problem today · body",
           "before": "In most private funds, an investor who wants out has one option: wait for the next redemption window. When the window arrives, the fund has to find the cash, sometimes by selling assets it would rather keep. For many investors, that lock-up is the reason they say no in the first place.",
-          "after": "In most private funds, an investor who wants out must wait for the next redemption window, and the fund may have to sell assets to pay them. For many investors, that lock-up is the reason they say no in the first place.",
+          "after": "In most private funds, investors can exit only at scheduled redemption windows, and meeting redemptions may require the sale of assets. For many investors, this lock-up is a key reason not to invest.",
           "tier": "style",
           "rules": [
             "length",
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "Cuts three sentences to two and drops the dramatic colon set-up (\"has one option: wait…\").",
           "shotBefore": "shots/secondary-transfer/3-before.jpg",
@@ -142,11 +224,12 @@
         {
           "section": "What changes · Capital stays in the fund",
           "before": "Redemptions drain the fund. Secondary transfers do not. The position simply moves to a new holder, and your strategy stays intact.",
-          "after": "Unlike a redemption, a secondary transfer does not draw on the fund. The position moves to a new holder, and your strategy stays intact.",
+          "after": "Unlike a redemption, a secondary transfer does not draw on fund capital. The position moves to a new holder, and your investment strategy is preserved.",
           "tier": "style",
           "rules": [
             "length",
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "The clipped \"X does. Y does not.\" pair and the filler \"simply\" are AI tells. Also cuts three sentences to two.",
           "shotBefore": "shots/secondary-transfer/4-before.jpg",
@@ -155,14 +238,75 @@
         {
           "section": "How it works · body",
           "before": "When an incoming and outgoing investor agree to a transaction, ownership and payment swap in a single step. Only investors who meet your fund's eligibility rules can participate, and your limits apply automatically. Every transfer is recorded on your register the moment it happens.",
-          "after": "When two investors agree a transfer, ownership and payment swap in a single step, and only investors who meet your eligibility rules can take part. Your limits apply automatically, and every transfer is recorded on your register as it happens.",
+          "after": "When two eligible investors agree to a transfer, ownership and payment are exchanged in a single step. Your eligibility rules and limits apply automatically, and every transfer is recorded on your register in real time.",
           "tier": "style",
           "rules": [
-            "length"
+            "length",
+            "tone"
           ],
           "why": "Three sentences become two, with nothing dropped.",
           "shotBefore": "shots/secondary-transfer/5-before.jpg",
           "shotAfter": "shots/secondary-transfer/5-after.jpg"
+        },
+        {
+          "section": "What changes · H3",
+          "before": "Easier to raise into.",
+          "after": "Stronger capital raising.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "\"Raise into\" is industry slang. The rewrite names the outcome plainly.",
+          "shotBefore": "shots/secondary-transfer/6-before.jpg",
+          "shotAfter": "shots/secondary-transfer/6-after.jpg"
+        },
+        {
+          "section": "What changes · Easier to raise into · body",
+          "before": "Investors commit more readily when they know there is a way out. A clear exit path removes one of the biggest objections to a private fund, and helps you grow AUM.",
+          "after": "Investors commit more readily when an exit path is available. This addresses a common objection to private funds and supports AUM growth.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/secondary-transfer/7-before.jpg",
+          "shotAfter": "shots/secondary-transfer/7-after.jpg"
+        },
+        {
+          "section": "What changes · H3",
+          "before": "A liquidity edge.",
+          "after": "A structural advantage.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/secondary-transfer/8-before.jpg",
+          "shotAfter": "shots/secondary-transfer/8-after.jpg"
+        },
+        {
+          "section": "What changes · A liquidity edge · body",
+          "before": "Liquidity between windows is rare in private markets. Offering secondary transfers gives your fund a structural advantage that traditional operators cannot easily match.",
+          "after": "Liquidity between redemption windows is uncommon in private markets. Offering secondary transfers differentiates your fund from traditional operators.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/secondary-transfer/9-before.jpg",
+          "shotAfter": "shots/secondary-transfer/9-after.jpg"
+        },
+        {
+          "section": "Get ready now · H2",
+          "before": "Set up today, switch on when you are ready",
+          "after": "Prepare now, activate when ready",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/secondary-transfer/10-before.jpg",
+          "shotAfter": "shots/secondary-transfer/10-after.jpg"
         }
       ]
     },
@@ -175,11 +319,12 @@
         {
           "section": "Hero · H1",
           "before": "Every position, visible in real time.",
-          "after": "Your register, <em>live for every investor.</em>",
+          "after": "Your register, <em>current in real time.</em>",
           "tier": "tighten",
           "why": "\"Every position\" reads as the investor checking their holding. The issuer owns the register, and making it live is the product.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/real-time-transparency/0-before.jpg",
           "shotAfter": "shots/real-time-transparency/0-after.jpg"
@@ -187,10 +332,11 @@
         {
           "section": "What changes · Investors who trust you more",
           "before": "Live holdings, statements and tax reports are always available, so investors stop calling to check. Fewer queries, more confidence in your fund, and more reason to invest again.",
-          "after": "Live holdings, statements and tax reports are always available, so investors stop calling to check. That means fewer queries and more confidence in your fund.",
+          "after": "Live holdings, statements and tax reports are always available, which reduces investor queries. Consistent, timely information builds confidence in your fund.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "The verbless triple (\"Fewer…, more…, and more…\") is an AI tell. This version is a plain sentence.",
           "shotBefore": "shots/real-time-transparency/1-before.jpg",
@@ -199,10 +345,11 @@
         {
           "section": "What changes · H3",
           "before": "Your brand, not ours.",
-          "after": "Your brand on every screen.",
+          "after": "Fully branded to your fund.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "\"X, not Y\" contrasts are a common AI tell. The rewrite states the benefit directly.",
           "shotBefore": "shots/real-time-transparency/2-before.jpg",
@@ -211,11 +358,12 @@
         {
           "section": "How it works · body",
           "before": "Every transaction updates a single register at the moment it settles. Your team works from that record, your investors see it in your portal, and statements and tax reports are produced from it. Everyone sees the same numbers, at the same time.",
-          "after": "Every transaction updates a single register the moment it settles. Your team, your investor portal, and your statements and tax reports all work from that one record.",
+          "after": "Every transaction updates a single register at the point of settlement. Your team, investor portal, statements and tax reports all draw on that one record.",
           "tier": "style",
           "rules": [
             "length",
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "Cuts three sentences to two. The closing tagline repeated the point.",
           "shotBefore": "shots/real-time-transparency/3-before.jpg",
@@ -224,10 +372,11 @@
         {
           "section": "Readiness Index block · H2 (shared: also on Automated Compliance, Distribution)",
           "before": "Find out where you actually stand.",
-          "after": "Find out where you stand.",
+          "after": "Assess your readiness.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "\"Actually\" is filler. This block is shared, so one fix updates all three pages.",
           "shotBefore": "shots/real-time-transparency/4-before.jpg",
@@ -236,15 +385,100 @@
         {
           "section": "Readiness Index block · footnote (shared: also on Automated Compliance, Distribution)",
           "before": "Free to complete. No consultant required. Results delivered by email.",
-          "after": "Free to complete, with results sent by email.",
+          "after": "The assessment is free, and results are delivered by email.",
           "tier": "style",
           "rules": [
             "length",
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "Three clipped fragments are an AI tell. \"No consultant required\" adds little. This block is shared.",
           "shotBefore": "shots/real-time-transparency/5-before.jpg",
           "shotAfter": "shots/real-time-transparency/5-after.jpg"
+        },
+        {
+          "section": "Hero · subtitle",
+          "before": "One portal, live holdings, in your brand. Your register updates itself with every trade, and your investors see the change the moment it happens.",
+          "after": "A single branded portal with live holdings. Your register updates with every trade, and investors see each change immediately.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/real-time-transparency/6-before.jpg",
+          "shotAfter": "shots/real-time-transparency/6-after.jpg"
+        },
+        {
+          "section": "The problem today · H2",
+          "before": "Spreadsheets, reconciliations and quarter-end guesswork",
+          "after": "Manual reconciliation<br />and delayed reporting",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "\"Guesswork\" is informal. The rewrite names the operational problem.",
+          "shotBefore": "shots/real-time-transparency/7-before.jpg",
+          "shotAfter": "shots/real-time-transparency/7-after.jpg"
+        },
+        {
+          "section": "The problem today · body",
+          "before": "Most fund registers are updated after the fact, across several systems that have to be reconciled by hand. Investors wait for statements, call when something looks wrong, and rarely see an accurate picture between reporting dates.",
+          "after": "Most fund registers are updated after the fact, across several systems that require manual reconciliation. Between reporting dates, investors rarely have an accurate view of their holdings.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/real-time-transparency/8-before.jpg",
+          "shotAfter": "shots/real-time-transparency/8-after.jpg"
+        },
+        {
+          "section": "What changes · H3",
+          "before": "A lighter back office.",
+          "after": "Lower operating overhead.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/real-time-transparency/9-before.jpg",
+          "shotAfter": "shots/real-time-transparency/9-after.jpg"
+        },
+        {
+          "section": "What changes · A lighter back office · body",
+          "before": "Subscriptions, redemptions, transfers and distributions update the register as they happen. There is nothing to reconcile, and the spreadsheet can be retired.",
+          "after": "Subscriptions, redemptions, transfers and distributions update the register as they occur. Manual reconciliation and spreadsheets are no longer required.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/real-time-transparency/10-before.jpg",
+          "shotAfter": "shots/real-time-transparency/10-after.jpg"
+        },
+        {
+          "section": "What changes · H3",
+          "before": "Investors who trust you more.",
+          "after": "Greater investor confidence.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/real-time-transparency/11-before.jpg",
+          "shotAfter": "shots/real-time-transparency/11-after.jpg"
+        },
+        {
+          "section": "What changes · Your brand · body",
+          "before": "The investor portal carries your name and your look, on any device. Every time investors log in, they are reminded of your fund.",
+          "after": "The investor portal carries your fund's name and branding on every device. Each login reinforces your relationship with investors.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/real-time-transparency/12-before.jpg",
+          "shotAfter": "shots/real-time-transparency/12-after.jpg"
         }
       ]
     },
@@ -257,11 +491,12 @@
         {
           "section": "Hero · subtitle",
           "before": "No market hours, no cut-offs. Investors can view, subscribe, transfer and settle at any hour, from any device, with your rules checked every time.",
-          "after": "No market hours, no cut-offs. Let investors view, subscribe, transfer and settle at any hour, from any device, with your rules checked every time.",
+          "after": "Your fund operates without market hours or cut-offs. Enable investors to view, subscribe, transfer and settle at any time, on any device, with your rules applied to every transaction.",
           "tier": "tighten",
           "why": "A one-word change that makes the fund the actor, matching the \"Your fund, open 24/7\" headline.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/always-on/0-before.jpg",
           "shotAfter": "shots/always-on/0-after.jpg"
@@ -269,11 +504,12 @@
         {
           "section": "What changes · H3",
           "before": "Investors served on their schedule.",
-          "after": "Service at institutional pace.",
+          "after": "Service that meets institutional expectations.",
           "tier": "tighten",
           "why": "The benefit to the fund is the one the body ends on: sophisticated investors notice a fund that keeps up with them.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/always-on/1-before.jpg",
           "shotAfter": "shots/always-on/1-after.jpg"
@@ -281,10 +517,11 @@
         {
           "section": "The problem today · body",
           "before": "Most funds run on strict domestic business hours. Subscriptions that arrive after the afternoon cut-off wait until the next working day. Traditional registry systems pause outside local operation windows, forcing international applications to wait for a local processing cycle before anything moves.",
-          "after": "Most funds run on domestic business hours, so subscriptions that arrive after the afternoon cut-off wait until the next working day. Offshore applications wait for the next local processing cycle before anything moves.",
+          "after": "Most funds operate on domestic business hours, so subscriptions received after the cut-off are processed the next working day. Offshore applications must wait for the next local processing cycle.",
           "tier": "style",
           "rules": [
-            "length"
+            "length",
+            "tone"
           ],
           "why": "Three long sentences become two shorter ones.",
           "shotBefore": "shots/always-on/2-before.jpg",
@@ -293,10 +530,11 @@
         {
           "section": "What changes · Processing without friction",
           "before": "Applications and settlement events can occur across varying time zones without waiting for the next domestic business cycle. Capital moves efficiently.",
-          "after": "Applications and settlements go through in any time zone, without waiting for the next domestic business day.",
+          "after": "Applications and settlements are processed across time zones, without waiting for the next domestic business day.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "\"Capital moves efficiently.\" is a filler closer. The rest is simplified.",
           "shotBefore": "shots/always-on/3-before.jpg",
@@ -305,11 +543,12 @@
         {
           "section": "How it works · body",
           "before": "Tokeniser runs around the clock. Subscriptions, transfers and distributions are processed whenever they come in, and every one is checked against your fund's rules first, day or night. Nothing queues for the morning.",
-          "after": "Tokeniser processes subscriptions, transfers and distributions around the clock, as they come in. Each one is checked against your fund's rules first.",
+          "after": "Tokeniser processes subscriptions, transfers and distributions continuously, as they are received. Each transaction is checked against your fund's rules first.",
           "tier": "style",
           "rules": [
             "length",
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "Cuts three sentences to two. \"Day or night\" and \"Nothing queues for the morning\" restate \"around the clock\".",
           "shotBefore": "shots/always-on/4-before.jpg",
@@ -318,10 +557,11 @@
         {
           "section": "Briefs block · H2 (shared: also on Collateral Mobility, Secondary Transfer, Getting Started)",
           "before": "Three briefs. One argument.",
-          "after": "The case for tokenising now",
+          "after": "The case for tokenisation now",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "Two clipped fragments are an AI tell. This block is shared across four pages.",
           "shotBefore": "shots/always-on/5-before.jpg",
@@ -330,14 +570,75 @@
         {
           "section": "Briefs block · body (shared: also on Collateral Mobility, Secondary Transfer, Getting Started)",
           "before": "The commercial case for tokenisation, the window of opportunity now open in Australia, and the cost of waiting. Each brief stands alone; together they make the complete case.",
-          "after": "Three short briefs on the commercial case for tokenisation, why Australia's window is open now, and the cost of waiting.",
+          "after": "Three briefs covering the commercial case for tokenisation, the current opportunity in Australia, and the cost of delay.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "The first \"sentence\" has no verb, and \"stands alone; together…\" is a rhetorical flourish. This version is one plain sentence.",
           "shotBefore": "shots/always-on/6-before.jpg",
           "shotAfter": "shots/always-on/6-after.jpg"
+        },
+        {
+          "section": "The problem today · H2",
+          "before": "Closed nights, weekends and public holidays",
+          "after": "Constrained by local business hours",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/always-on/7-before.jpg",
+          "shotAfter": "shots/always-on/7-after.jpg"
+        },
+        {
+          "section": "What changes · A global investor base · body",
+          "before": "Your fund is open when your investors are, including those offshore, in their own time zone. That gives an Australian fund a real edge in winning international capital and growing AUM.",
+          "after": "Your fund is accessible to investors in every time zone, including offshore. This positions an Australian fund to attract international capital and grow AUM.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/always-on/8-before.jpg",
+          "shotAfter": "shots/always-on/8-after.jpg"
+        },
+        {
+          "section": "What changes · H3",
+          "before": "Processing without friction.",
+          "after": "Continuous processing.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/always-on/9-before.jpg",
+          "shotAfter": "shots/always-on/9-after.jpg"
+        },
+        {
+          "section": "What changes · Service · body",
+          "before": "Holdings, statements and transactions are available any time, on any device. Sophisticated investors notice a fund that matches their institutional pace.",
+          "after": "Holdings, statements and transactions are available at any time, on any device. This meets the service expectations of sophisticated investors.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/always-on/10-before.jpg",
+          "shotAfter": "shots/always-on/10-after.jpg"
+        },
+        {
+          "section": "How it works · H2",
+          "before": "Built on infrastructure that never closes",
+          "after": "Built on infrastructure<br />that operates continuously",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "\"Never closes\" is informal. \"Operates continuously\" is precise.",
+          "shotBefore": "shots/always-on/11-before.jpg",
+          "shotAfter": "shots/always-on/11-after.jpg"
         }
       ]
     },
@@ -350,11 +651,12 @@
         {
           "section": "The problem today · body",
           "before": "Every subscription, redemption and transfer in your fund sits in limbo until it settles. That is two business days for listed funds, and often much longer for private assets. It is capital your investors cannot use, cash your fund cannot deploy, and a cost someone is paying.",
-          "after": "Every subscription, redemption and transfer in your fund waits until it settles, which takes two business days for listed funds and often longer for private assets. Until then, your investors cannot use the capital and your fund cannot deploy the cash.",
+          "after": "Every subscription, redemption and transfer remains unsettled for two business days in listed funds, and often longer in private assets. During this period, capital cannot be used by investors or deployed by your fund.",
           "tier": "style",
           "rules": [
             "length",
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "Cuts three sentences to two and drops the rhetorical triple (\"…and a cost someone is paying\").",
           "shotBefore": "shots/instant-settlement/0-before.jpg",
@@ -363,10 +665,11 @@
         {
           "section": "What changes · Capital back to work",
           "before": "Subscriptions settle the moment they arrive, so cash is ready to invest straight away. No more cash drag on performance.",
-          "after": "Subscriptions settle the moment they arrive, so cash is ready to invest with no drag on performance.",
+          "after": "Subscriptions settle on receipt, so capital is available to invest immediately and cash drag is removed.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "Folds the \"No more…\" fragment into the sentence.",
           "shotBefore": "shots/instant-settlement/1-before.jpg",
@@ -375,10 +678,11 @@
         {
           "section": "What changes · A lighter back office",
           "before": "When the trade and the record update together, there is nothing to reconcile. Fewer breaks, fewer late fixes.",
-          "after": "When the trade and the record update together, there is nothing to reconcile and fewer breaks to fix.",
+          "after": "When the trade and the register update together, reconciliation is no longer required and settlement breaks are reduced.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "The clipped \"Fewer X, fewer Y.\" closer is an AI tell.",
           "shotBefore": "shots/instant-settlement/2-before.jpg",
@@ -387,14 +691,111 @@
         {
           "section": "How it works · body",
           "before": "Today, cash and units move separately, and records catch up days later. On Tokeniser, cash and units swap in a single step, and your register updates at the same moment. If either side cannot complete, neither does.",
-          "after": "Today, cash and units move separately, and records catch up days later. On Tokeniser, cash and units swap in a single step and your register updates at the same moment, or neither side completes.",
+          "after": "Today, cash and units move separately, and records are updated days later. On Tokeniser, cash and units are exchanged in a single step and the register updates simultaneously, or the transaction does not proceed.",
           "tier": "style",
           "rules": [
-            "length"
+            "length",
+            "tone"
           ],
           "why": "Three sentences become two, with nothing dropped.",
           "shotBefore": "shots/instant-settlement/3-before.jpg",
           "shotAfter": "shots/instant-settlement/3-after.jpg"
+        },
+        {
+          "section": "Hero · H1",
+          "before": "Settlement that is already done.",
+          "after": "Settlement, <em>at the point of trade.</em>",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/instant-settlement/4-before.jpg",
+          "shotAfter": "shots/instant-settlement/4-after.jpg"
+        },
+        {
+          "section": "Hero · subtitle",
+          "before": "T+2 becomes T+0. The capital tied up waiting for trades to settle goes back to work the moment a trade is struck.",
+          "after": "Move from T+2 to T+0 settlement. Capital that would await settlement is available the moment a trade is executed.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/instant-settlement/5-before.jpg",
+          "shotAfter": "shots/instant-settlement/5-after.jpg"
+        },
+        {
+          "section": "The problem today · H2",
+          "before": "Two days of waiting, on every trade",
+          "after": "Two-day settlement on every trade",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/instant-settlement/6-before.jpg",
+          "shotAfter": "shots/instant-settlement/6-after.jpg"
+        },
+        {
+          "section": "The problem today · statistic",
+          "before": "At a 5% cost of capital, a $1b fund pays roughly $274,000 a year just to wait two days.",
+          "after": "At a 5% cost of capital, a $1b fund incurs roughly $274,000 a year from a two-day settlement delay.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "\"Just to wait\" is conversational. The figure is unchanged.",
+          "shotBefore": "shots/instant-settlement/7-before.jpg",
+          "shotAfter": "shots/instant-settlement/7-after.jpg"
+        },
+        {
+          "section": "What changes · H3",
+          "before": "Capital back to work.",
+          "after": "Capital deployed sooner.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/instant-settlement/8-before.jpg",
+          "shotAfter": "shots/instant-settlement/8-after.jpg"
+        },
+        {
+          "section": "What changes · H3",
+          "before": "A fund investors choose.",
+          "after": "Meeting investor expectations.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/instant-settlement/9-before.jpg",
+          "shotAfter": "shots/instant-settlement/9-after.jpg"
+        },
+        {
+          "section": "What changes · A fund investors choose · body",
+          "before": "Instant settlement is fast becoming the standard investors compare against. Be the fund that already offers it, and win the allocations that follow.",
+          "after": "Instant settlement is becoming the benchmark investors use to compare funds. Offering it now positions your fund to win allocations.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/instant-settlement/10-before.jpg",
+          "shotAfter": "shots/instant-settlement/10-after.jpg"
+        },
+        {
+          "section": "What changes · H3",
+          "before": "A lighter back office.",
+          "after": "Lower operating overhead.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/instant-settlement/11-before.jpg",
+          "shotAfter": "shots/instant-settlement/11-after.jpg"
         }
       ]
     },
@@ -407,10 +808,11 @@
         {
           "section": "Hero · subtitle",
           "before": "Eligibility is built into every asset and transaction. Every trade is checked against your fund's rules before it happens, not after.",
-          "after": "Eligibility is built into every asset and transaction, so every trade is checked against your fund's rules before it happens.",
+          "after": "Eligibility is built into every asset and transaction, so each trade is checked against your fund's rules before execution.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "\"…before it happens, not after\" is an AI-style contrast. \"Before\" already says it.",
           "shotBefore": "shots/automated-compliance/0-before.jpg",
@@ -419,10 +821,11 @@
         {
           "section": "What changes · Less risk, fewer breaches",
           "before": "A trade that breaks your rules simply cannot go through. Your fiduciary duty is protected by design, and every check is recorded for your auditors.",
-          "after": "A trade that breaks your rules cannot go through, and every check is recorded for your auditors.",
+          "after": "Trades that breach your rules cannot proceed, and every check is recorded for audit.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "Drops the filler \"simply\" and the stock phrase \"protected by design\".",
           "shotBefore": "shots/automated-compliance/1-before.jpg",
@@ -431,14 +834,87 @@
         {
           "section": "How it works · body",
           "before": "Before any trade goes through, the investor is checked automatically: identity verified, eligibility confirmed (including wholesale or sophisticated status where required), and your limits applied. If a check fails, the trade does not happen. Every check is logged.",
-          "after": "Before any trade goes through, the investor's identity, eligibility (including wholesale or sophisticated status where required) and your limits are checked automatically. If a check fails, the trade does not happen, and every check is logged.",
+          "after": "Before any trade proceeds, the investor's identity, eligibility (including wholesale or sophisticated status where required) and your limits are verified automatically. Trades that fail a check do not proceed, and every check is logged.",
           "tier": "style",
           "rules": [
-            "length"
+            "length",
+            "tone"
           ],
           "why": "Three sentences become two, with nothing dropped.",
           "shotBefore": "shots/automated-compliance/2-before.jpg",
           "shotAfter": "shots/automated-compliance/2-after.jpg"
+        },
+        {
+          "section": "Hero · H1",
+          "before": "Rules that cannot be skipped.",
+          "after": "Compliance, <em>enforced on every trade.</em>",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/automated-compliance/3-before.jpg",
+          "shotAfter": "shots/automated-compliance/3-after.jpg"
+        },
+        {
+          "section": "The problem today · H2",
+          "before": "Checked by hand, caught too late",
+          "after": "Manual checks and late detection",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/automated-compliance/4-before.jpg",
+          "shotAfter": "shots/automated-compliance/4-after.jpg"
+        },
+        {
+          "section": "The problem today · body",
+          "before": "Investor eligibility, holder limits and transfer restrictions are usually managed across spreadsheets, emails and manual sign-offs. Checks take time, and when something slips through, it is found after the trade, when fixing it is slow and costly.",
+          "after": "Investor eligibility, holder limits and transfer restrictions are typically managed through spreadsheets, emails and manual sign-offs. Breaches are often identified after the trade, when remediation is slow and costly.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/automated-compliance/5-before.jpg",
+          "shotAfter": "shots/automated-compliance/5-after.jpg"
+        },
+        {
+          "section": "What changes · Lower compliance cost · body",
+          "before": "Checks run automatically on every trade, so your team spends less time checking and fixing.",
+          "after": "Checks run automatically on every trade, reducing the time your team spends on review and remediation.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/automated-compliance/6-before.jpg",
+          "shotAfter": "shots/automated-compliance/6-after.jpg"
+        },
+        {
+          "section": "What changes · H3",
+          "before": "Room to grow.",
+          "after": "Scalable operations.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/automated-compliance/7-before.jpg",
+          "shotAfter": "shots/automated-compliance/7-after.jpg"
+        },
+        {
+          "section": "What changes · Room to grow · body",
+          "before": "Take on more investors and more transactions without adding compliance headcount. Your rules scale with your fund.",
+          "after": "Grow your investor base and transaction volumes without adding compliance headcount.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/automated-compliance/8-before.jpg",
+          "shotAfter": "shots/automated-compliance/8-after.jpg"
         }
       ]
     },
@@ -451,12 +927,13 @@
         {
           "section": "Superpowers · Liquidity card · H2",
           "before": "Turn a locked position into a source of liquidity",
-          "after": "Offer liquidity without losing the capital",
+          "after": "Offer liquidity while retaining capital",
           "tier": "tighten",
           "why": "\"A locked position\" is the investor's holding. The sibling cards (\"Open more markets\", \"Cut cost and administration\") are issuer outcomes, so this one should be too.",
           "tab": "Liquidity",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/overview/0-before.jpg",
           "shotAfter": "shots/overview/0-after.jpg"
@@ -464,12 +941,13 @@
         {
           "section": "Superpowers · Liquidity card · body",
           "before": "Investors can borrow against their holdings without exiting the position, or exit without waiting for a redemption window. Continuous pricing and 24/7 settlement change what your asset is worth.",
-          "after": "Let investors borrow against their holdings or exit between redemption windows, while the capital stays in your fund. Continuous pricing and 24/7 settlement change what your asset is worth.",
+          "after": "Enable investors to borrow against their holdings or exit between redemption windows, while capital remains in your fund. Continuous pricing and 24/7 settlement change how your asset is valued.",
           "tier": "tighten",
           "why": "Leads with what the issuer offers and adds the issuer outcome (capital retained) that both liquidity superpowers deliver.",
           "tab": "Liquidity",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/overview/1-before.jpg",
           "shotAfter": "shots/overview/1-after.jpg"
@@ -489,11 +967,12 @@
         {
           "section": "Why this matters · A straightforward path",
           "before": "Bringing an existing registry? Onboard progressively, taking your holders from centralised custody to self-custody. Decouple IT change from back-office change and tokenise on your terms.",
-          "after": "Bring your existing registry and move holders in stages, from centralised custody to self-custody. Change your IT and your back office at separate paces.",
+          "after": "Migrate your existing registry and move holders in stages, from centralised custody to self-custody. Technology and back-office changes can proceed independently.",
           "tier": "style",
           "rules": [
             "length",
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "Cuts three sentences to two and drops the question opener and the stock phrase \"on your terms\".",
           "shotBefore": "shots/overview/3-before.jpg",
@@ -502,15 +981,52 @@
         {
           "section": "Closing CTA · body",
           "before": "Let's talk about your path forward and what's possible.",
-          "after": "Talk to us about your path to tokenisation.",
+          "after": "Speak with our team about your path to tokenisation.",
           "tier": "style",
           "rules": [
             "contraction",
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "Has two contractions (\"Let's\", \"what's\"), and \"what's possible\" is vague.",
           "shotBefore": "shots/overview/4-before.jpg",
           "shotAfter": "shots/overview/4-after.jpg"
+        },
+        {
+          "section": "Hero · subtitle",
+          "before": "All you need from a registry, with a powerful protocol finance unlock. End-to-end management of funds, equities, loans and notes.",
+          "after": "A complete registry, with protocol finance capabilities built in. End-to-end management of funds, equities, loans and notes.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "\"A powerful protocol finance unlock\" is marketing slang.",
+          "shotBefore": "shots/overview/5-before.jpg",
+          "shotAfter": "shots/overview/5-after.jpg"
+        },
+        {
+          "section": "Why this matters · H2",
+          "before": "Ingredients for differentiation and real growth",
+          "after": "The foundations for differentiation and growth",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/overview/6-before.jpg",
+          "shotAfter": "shots/overview/6-after.jpg"
+        },
+        {
+          "section": "Getting started · body",
+          "before": "Tokeniser decouples your IT infrastructure from your back-office workflows, so each can transform at its own pace. Our practitioners guide you through each stage, keeping risk low and momentum steady.",
+          "after": "Tokeniser separates your IT infrastructure from your back-office workflows, so each can change at its own pace. Our practitioners guide you through each stage to manage risk and maintain progress.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/overview/7-before.jpg",
+          "shotAfter": "shots/overview/7-after.jpg"
         }
       ]
     },
@@ -523,13 +1039,14 @@
         {
           "section": "Benefits · Transact · Atomic settlement",
           "before": "Investors transact directly with asset issuers, other investors or protocols. Settlement is instant. T+0 is the new normal.",
-          "after": "Your investors transact directly with you, with each other or with protocols, and settle instantly at T+0.",
+          "after": "Your investors transact directly with you, with other investors or with protocols, with instant T+0 settlement.",
           "tier": "break",
           "why": "\"With asset issuers\" is written from the investor's side and makes the reader a third party. The rewrite also cuts three sentences to one and drops the cliché \"the new normal\".",
           "rules": [
             "lens",
             "length",
-            "ai"
+            "ai",
+            "tone"
           ],
           "shotBefore": "shots/distribution/0-before.jpg",
           "shotAfter": "shots/distribution/0-after.jpg"
@@ -537,11 +1054,12 @@
         {
           "section": "Look-through · body",
           "before": "No more reconciling across siloed systems. Investors see the full structure of their asset in one place, with the status of your asset in real time and transparent, open rules that govern the asset.",
-          "after": "No more reconciling across siloed systems. Show investors the full structure of your asset in one place: its live status, and the open rules that govern it.",
+          "after": "Reconciliation across siloed systems is no longer required. Provide investors with a single view of your asset, including its live status and governing rules.",
           "tier": "tighten",
           "why": "The original switches from \"their asset\" to \"your asset\" in one sentence. The rewrite keeps the asset the issuer's and makes visibility something the issuer gives.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/distribution/1-before.jpg",
           "shotAfter": "shots/distribution/1-after.jpg"
@@ -549,11 +1067,12 @@
         {
           "section": "Benefits · Custody · body",
           "before": "Investors hold their own position directly. Fewer layers between the asset and its owner means lower cost and more control.",
-          "after": "Let investors hold their positions directly. Fewer layers between your asset and its holders means lower cost for you and more control for them.",
+          "after": "Enable investors to hold their positions directly. Fewer intermediaries between your asset and its holders reduces cost and increases control.",
           "tier": "tighten",
           "why": "\"Its owner\" means the investor. The rewrite names who gets which benefit, and the issuer's lower cost comes first.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/distribution/2-before.jpg",
           "shotAfter": "shots/distribution/2-after.jpg"
@@ -561,11 +1080,12 @@
         {
           "section": "Superpowers · Real-Time Transparency card",
           "before": "Investors see the live status of their holdings and the rules that govern them.",
-          "after": "Show investors the live status of their holdings and the rules that govern them.",
+          "after": "Provide investors with live visibility of their holdings and the rules that govern them.",
           "tier": "tighten",
           "why": "Matches the Always-On card next to it (\"Your asset is open…\"), so the issuer is the actor.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/distribution/3-before.jpg",
           "shotAfter": "shots/distribution/3-after.jpg"
@@ -573,10 +1093,11 @@
         {
           "section": "Distribution that costs less · body",
           "before": "Traditional channels bleed capital through layers of intermediaries. Protocol finance strips out the middlemen and connects your asset directly to investors through AI-driven networks.",
-          "after": "Traditional channels add cost through layers of intermediaries. Protocol finance removes them and connects your asset directly to investors through AI-driven networks.",
+          "after": "Traditional channels add cost through multiple layers of intermediaries. Protocol finance removes these layers and connects your asset directly to investors through AI-driven networks.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "Tones down the dramatic verbs (\"bleed\", \"strips out\") into plain ones.",
           "shotBefore": "shots/distribution/4-before.jpg",
@@ -585,10 +1106,11 @@
         {
           "section": "Investor Portal · body",
           "before": "Launch with a modern, mobile-first investor portal that makes life easy for your investors. Configure it to your brand, your requirements, and your fund structure. Introduce more sophisticated protocol finance options as your asset seasons.",
-          "after": "Launch a mobile-first investor portal configured to your brand, requirements and fund structure. Add more protocol finance options as your asset matures.",
+          "after": "Launch a mobile-first investor portal configured to your brand, requirements and fund structure. Introduce further protocol finance capabilities as your asset matures.",
           "tier": "style",
           "rules": [
-            "length"
+            "length",
+            "tone"
           ],
           "why": "Cuts three sentences to two. \"As your asset seasons\" is jargon.",
           "shotBefore": "shots/distribution/5-before.jpg",
@@ -597,10 +1119,11 @@
         {
           "section": "Investor Portal · White label",
           "before": "Your brand, your rules. The portal carries your name and your identity.",
-          "after": "The portal carries your name and your brand.",
+          "after": "The portal carries your fund's name and branding.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "The \"Your X, your Y.\" fragment is an AI tell.",
           "shotBefore": "shots/distribution/6-before.jpg",
@@ -609,10 +1132,11 @@
         {
           "section": "Investor Portal · Mobile first",
           "before": "Investors are looking for convenience, and convenience is mobile. Your asset is available to them around the clock, not just in business hours. See Always-On →",
-          "after": "Investors expect to transact on mobile, so your asset is available to them around the clock. <a href=\"/product/superpowers/always-on\">See Always-On →</a>",
+          "after": "Investors increasingly expect mobile access, so your asset is available to them at any time. <a href=\"/product/superpowers/always-on\">See Always-On →</a>",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "The repetition (\"convenience, and convenience is…\") and the \"not just…\" contrast are AI tells.",
           "shotBefore": "shots/distribution/7-before.jpg",
@@ -621,14 +1145,39 @@
         {
           "section": "Investor Portal · API",
           "before": "Take the reins of your investor experience, and integrate with our registry APIs.",
-          "after": "Build your own investor experience on our registry APIs.",
+          "after": "Develop your own investor experience using our registry APIs.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "\"Take the reins\" is a stock phrase. The rewrite says what the API does.",
           "shotBefore": "shots/distribution/8-before.jpg",
           "shotAfter": "shots/distribution/8-after.jpg"
+        },
+        {
+          "section": "Hero · subtitle",
+          "before": "Replace high-cost channels with direct reach that lowers your cost of capital, while unlocking new global markets through compliant rails.",
+          "after": "Replace high-cost channels with direct investor access that lowers your cost of capital and opens new global markets through compliant infrastructure.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/distribution/9-before.jpg",
+          "shotAfter": "shots/distribution/9-after.jpg"
+        },
+        {
+          "section": "Benefits · Custody · H3",
+          "before": "Investor custody cuts out intermediaries",
+          "after": "Direct investor custody",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/distribution/10-before.jpg",
+          "shotAfter": "shots/distribution/10-after.jpg"
         }
       ]
     },
@@ -641,11 +1190,12 @@
         {
           "section": "Borrow · bullet",
           "before": "Borrow against your holdings in real time",
-          "after": "Let investors borrow against their units in real time",
+          "after": "Enable investors to borrow against their units in real time",
           "tier": "break",
           "why": "\"Your holdings\" addresses the investor directly. This is the same issue as the Collateral Mobility hero.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/liquidity/0-before.jpg",
           "shotAfter": "shots/liquidity/0-after.jpg"
@@ -653,11 +1203,12 @@
         {
           "section": "Markets on demand · Tokeniser · Secondary markets",
           "before": "Trade around the clock, without waiting for a window.",
-          "after": "Let investors trade around the clock, without waiting for a window.",
+          "after": "Enable investors to trade at any time, without waiting for a redemption window.",
           "tier": "break",
           "why": "This is an instruction to the investor. The issuer does not trade its own units here; it offers the trading.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/liquidity/1-before.jpg",
           "shotAfter": "shots/liquidity/1-after.jpg"
@@ -665,11 +1216,12 @@
         {
           "section": "Markets on demand · Tokeniser · Borrow against holdings",
           "before": "Unlock liquidity without exiting the position.",
-          "after": "Let investors unlock cash without exiting the position.",
+          "after": "Enable investors to access liquidity without exiting their position.",
           "tier": "break",
           "why": "This is an instruction to the investor (whose position is being exited). The rewrite makes it a feature the issuer offers.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/liquidity/2-before.jpg",
           "shotAfter": "shots/liquidity/2-after.jpg"
@@ -677,11 +1229,12 @@
         {
           "section": "Markets on demand · Traditional · Redemption windows",
           "before": "Exit only when the fund opens a window. Capital sits idle between dates.",
-          "after": "Investors can exit only when you open a window. Capital sits idle between dates.",
+          "after": "Investors can exit only at scheduled redemption windows. Capital remains idle between dates.",
           "tier": "tighten",
           "why": "This is written as an instruction to the investor, and \"the fund\" means the reader. Changing it to \"you\" keeps the issuer as the reader.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/liquidity/3-before.jpg",
           "shotAfter": "shots/liquidity/3-after.jpg"
@@ -689,11 +1242,12 @@
         {
           "section": "Borrow · body",
           "before": "Investors can put their assets to work as collateral at any hour, unlocking liquidity. It is capital that earns its keep, always.",
-          "after": "Let investors put their units to work as collateral at any hour, so they unlock cash without redeeming and your capital stays in.",
+          "after": "Enable investors to pledge units as collateral at any time, accessing liquidity without redemption while capital remains in your fund.",
           "tier": "tighten",
           "why": "\"Capital that earns its keep\" is an investor benefit. The issuer's benefit is retained capital.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/liquidity/4-before.jpg",
           "shotAfter": "shots/liquidity/4-after.jpg"
@@ -701,11 +1255,12 @@
         {
           "section": "Borrow · bullet",
           "before": "No need to exit positions for liquidity",
-          "after": "Liquidity for investors, without redemptions",
+          "after": "Investor liquidity without redemptions",
           "tier": "tighten",
           "why": "\"Exit positions\" is the investor's frame. \"Without redemptions\" is the issuer's outcome.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/liquidity/5-before.jpg",
           "shotAfter": "shots/liquidity/5-after.jpg"
@@ -713,11 +1268,12 @@
         {
           "section": "Superpowers · Secondary Transfer card",
           "before": "Investors can trade their holdings around the clock, without waiting for a redemption window.",
-          "after": "Let investors trade their holdings around the clock, without waiting for a redemption window.",
+          "after": "Enable investors to trade their holdings at any time, without waiting for a redemption window.",
           "tier": "tighten",
           "why": "Makes the issuer the actor, so it reads the same as the other superpower cards.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/liquidity/6-before.jpg",
           "shotAfter": "shots/liquidity/6-after.jpg"
@@ -725,11 +1281,12 @@
         {
           "section": "Superpowers · Collateral Mobility card",
           "before": "Investors can borrow against their holdings without exiting the position.",
-          "after": "Let investors borrow against their holdings while the capital stays in your fund.",
+          "after": "Enable investors to borrow against their holdings while capital remains in your fund.",
           "tier": "tighten",
           "why": "Adds the issuer outcome, consistent with the new Collateral Mobility hero.",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "shotBefore": "shots/liquidity/7-before.jpg",
           "shotAfter": "shots/liquidity/7-after.jpg"
@@ -749,10 +1306,11 @@
         {
           "section": "Capital · body",
           "before": "Protocol finance allows you to programmatically publish rules for an asset on a public blockchain. This allows you to offer previously inaccessible liquidity capabilities without the traditional middlemen and their fees, lowering your cost of capital from day one.",
-          "after": "Protocol finance lets you publish an asset's rules on a public blockchain. You can then offer new liquidity options without middlemen and their fees, lowering your cost of capital from day one.",
+          "after": "Protocol finance enables you to publish an asset's rules on a public blockchain. You can then offer new liquidity options without intermediary fees, lowering your cost of capital from day one.",
           "tier": "style",
           "rules": [
-            "length"
+            "length",
+            "tone"
           ],
           "why": "Plainer words with the same claims (\"allows you to… This allows you to…\", \"previously inaccessible liquidity capabilities\").",
           "shotBefore": "shots/liquidity/9-before.jpg",
@@ -761,10 +1319,11 @@
         {
           "section": "Markets on demand · body",
           "before": "Give investors the freedom to enter and exit positions around the clock, with controls you configure to match your fund's structure. Liquidity no longer sleeps, and neither does their opportunity.",
-          "after": "Let investors enter and exit positions around the clock, with controls you configure to match your fund's structure.",
+          "after": "Enable investors to enter and exit positions at any time, within controls you configure for your fund's structure.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "\"Liquidity no longer sleeps, and neither does…\" is a decorative AI-style closer.",
           "shotBefore": "shots/liquidity/10-before.jpg",
@@ -773,14 +1332,51 @@
         {
           "section": "Borrow · H2",
           "before": "Collateral that never sleeps",
-          "after": "Collateral at any hour",
+          "after": "Collateral, available at any time",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "\"Never sleeps\" personification is an AI tell, and it is repeated from the section above.",
           "shotBefore": "shots/liquidity/11-before.jpg",
           "shotAfter": "shots/liquidity/11-after.jpg"
+        },
+        {
+          "section": "Hero · subtitle",
+          "before": "Unlock secondary liquidity, collateralisation, and atomic settlement for your assets under your existing regulatory licence.",
+          "after": "Offer secondary liquidity, collateralisation and atomic settlement for your assets under your existing regulatory licence.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/liquidity/12-before.jpg",
+          "shotAfter": "shots/liquidity/12-after.jpg"
+        },
+        {
+          "section": "Trade · H2",
+          "before": "Markets on demand",
+          "after": "Continuous market access",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/liquidity/13-before.jpg",
+          "shotAfter": "shots/liquidity/13-after.jpg"
+        },
+        {
+          "section": "Custody · H2",
+          "before": "Go direct",
+          "after": "Direct investor custody",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/liquidity/14-before.jpg",
+          "shotAfter": "shots/liquidity/14-after.jpg"
         }
       ]
     },
@@ -793,14 +1389,39 @@
         {
           "section": "Settlement · body",
           "before": "Subscriptions, redemptions and distributions settle instantly, in a single step. No waiting on T+ cycles, no cash sitting idle, and no chasing mismatched records.",
-          "after": "Subscriptions, redemptions and distributions settle instantly in a single step, with no idle cash and no mismatched records to chase.",
+          "after": "Subscriptions, redemptions and distributions settle instantly in a single step, without idle cash or mismatched records.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "The \"No X, no Y, and no Z.\" fragment is an AI tell.",
           "shotBefore": "shots/efficiency/0-before.jpg",
           "shotAfter": "shots/efficiency/0-after.jpg"
+        },
+        {
+          "section": "Getting Started · H2",
+          "before": "Efficiency without a big-bang project",
+          "after": "Efficiency without a large-scale transformation",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/efficiency/1-before.jpg",
+          "shotAfter": "shots/efficiency/1-after.jpg"
+        },
+        {
+          "section": "Impact Calculator · H2",
+          "before": "Take the drag out of your back office.",
+          "after": "Reduce cost across your <span class=\"pp-readiness__title-accent\">back office.</span>",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/efficiency/2-before.jpg",
+          "shotAfter": "shots/efficiency/2-after.jpg"
         }
       ]
     },
@@ -813,11 +1434,12 @@
         {
           "section": "Hero · subtitle",
           "before": "Tokenise fast. Decouple tech changes from back-office workflows. Our staged adoption methodology delivers protocol finance suited to your firm.",
-          "after": "Tokenise quickly, in stages, without changing your back office all at once. Our practitioners shape the rollout to suit your firm.",
+          "after": "Adopt tokenisation in stages, without changing your back office all at once. Our practitioners tailor the implementation to your firm.",
           "tier": "style",
           "rules": [
             "length",
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "Cuts three sentences to two, replaces the clipped imperatives, and drops \"staged adoption methodology delivers\".",
           "shotBefore": "shots/getting-started/0-before.jpg",
@@ -826,10 +1448,11 @@
         {
           "section": "Adoption · body",
           "before": "Tokenisation is now inevitable, but knowing where to start is hard. Tokeniser provides a clear, guided path that you can adopt at your own speed.",
-          "after": "Knowing where to start with tokenisation is hard. Tokeniser gives you a clear, guided path to adopt at your own pace.",
+          "after": "Identifying where to begin with tokenisation can be complex. Tokeniser provides a clear, guided path that you adopt at your own pace.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "\"Tokenisation is now inevitable\" is a sweeping AI-style claim that appears on two pages.",
           "shotBefore": "shots/getting-started/1-before.jpg",
@@ -838,10 +1461,11 @@
         {
           "section": "Adoption · Familiar form factor",
           "before": "Familiar workflows embedded with protocol finance. No complexity, just a modern registry that works.",
-          "after": "A modern registry with familiar workflows and protocol finance built in.",
+          "after": "A modern registry with familiar workflows and protocol finance capabilities built in.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "\"No X, just Y\" is an AI tell.",
           "tab": "Familiar start",
@@ -851,10 +1475,11 @@
         {
           "section": "Adoption · Decouple systems",
           "before": "Take the heavy lift out of it. You change your investor experience without overhauling internal processes all at once.",
-          "after": "Change your investor experience without overhauling your internal processes all at once.",
+          "after": "Update your investor experience without overhauling internal processes all at once.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "\"Take the heavy lift out of it\" is a filler opener.",
           "tab": "Staged growth",
@@ -864,10 +1489,11 @@
         {
           "section": "Adoption · Full potential",
           "before": "Access cheaper capital, 24/7 liquidity, and leverage in place. The full promise of tokenisation, reached methodically.",
-          "after": "Access <a href=\"/product/distribution\">cheaper capital</a>, <a href=\"/product/liquidity\">24/7 liquidity</a> and <a href=\"/product/superpowers/collateral-mobility\">leverage in place</a>, step by step.",
+          "after": "Access <a href=\"/product/distribution\">lower-cost capital</a>, <a href=\"/product/liquidity\">24/7 liquidity</a> and <a href=\"/product/superpowers/collateral-mobility\">leverage in place</a>, adopted in stages.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "\"The full promise of tokenisation, reached methodically.\" is a verbless flourish. The links are kept.",
           "tab": "Full potential",
@@ -877,10 +1503,11 @@
         {
           "section": "Guidance · Stage one",
           "before": "Detailed documentation walks your team through each phase of adoption. No guesswork, just a proven path.",
-          "after": "Detailed guides walk your team through each phase of adoption.",
+          "after": "Detailed documentation guides your team through each phase of adoption.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "\"No X, just Y\" is an AI tell.",
           "shotBefore": "shots/getting-started/5-before.jpg",
@@ -889,10 +1516,11 @@
         {
           "section": "Guidance · Stage three",
           "before": "You get the right level of help at the right time. Intensive early, lighter as your team builds confidence.",
-          "after": "Support is intensive early and lighter as your team builds confidence.",
+          "after": "Support is most intensive at the outset and reduces as your team builds confidence.",
           "tier": "style",
           "rules": [
-            "ai"
+            "ai",
+            "tone"
           ],
           "why": "\"Right level… right time\" is filler, and the verbless fragment is an AI tell.",
           "shotBefore": "shots/getting-started/6-before.jpg",
@@ -901,10 +1529,11 @@
         {
           "section": "Journey · body",
           "before": "Asset issuers have a significant back-office compliance obligation, with many moving parts that need to be levelled up to achieve the gains of protocol finance. From setup to secondary trading, here are our recommended steps.",
-          "after": "Your back-office compliance has many moving parts to level up before you see the gains of protocol finance. Here are our recommended steps, from setup to secondary trading.",
+          "after": "Your back-office compliance involves many moving parts that must be upgraded to realise the benefits of protocol finance. Below are our recommended steps, from setup to secondary trading.",
           "tier": "tighten",
           "rules": [
-            "lens"
+            "lens",
+            "tone"
           ],
           "why": "\"Asset issuers have…\" talks about the reader in the third person. \"You\" is the issuer.",
           "shotBefore": "shots/getting-started/7-before.jpg",
@@ -913,14 +1542,112 @@
         {
           "section": "Journey · Direct to Investor",
           "before": "With our investor portal as a start, create bi-lateral or protocol distribution agreements to gain improved digital distribution reach. See Distribution →",
-          "after": "Start with our investor portal, then add bilateral or protocol distribution agreements to reach more investors. <a href=\"/product/distribution\">See Distribution →</a>",
+          "after": "Begin with our investor portal, then establish bilateral or protocol distribution agreements to broaden your reach. <a href=\"/product/distribution\">See Distribution →</a>",
           "tier": "style",
           "rules": [
-            "length"
+            "length",
+            "tone"
           ],
           "why": "Simpler wording (\"to gain improved digital distribution reach\").",
           "shotBefore": "shots/getting-started/8-before.jpg",
           "shotAfter": "shots/getting-started/8-after.jpg"
+        },
+        {
+          "section": "Adoption · H2",
+          "before": "A journey you control",
+          "after": "A phased approach you control",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/getting-started/9-before.jpg",
+          "shotAfter": "shots/getting-started/9-after.jpg"
+        },
+        {
+          "section": "Adoption · Full potential · H3",
+          "before": "Arrive at sophisticated protocol finance value",
+          "after": "Realise the full value of protocol finance",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "tab": "Full potential",
+          "shotBefore": "shots/getting-started/10-before.jpg",
+          "shotAfter": "shots/getting-started/10-after.jpg"
+        },
+        {
+          "section": "Guidance · body",
+          "before": "Tokeniser brings seasoned practitioners who coach you through each stage.",
+          "after": "Experienced practitioners support your team through each stage.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/getting-started/11-before.jpg",
+          "shotAfter": "shots/getting-started/11-after.jpg"
+        },
+        {
+          "section": "Guidance · Stage two",
+          "before": "When questions arise you get answers from practitioners who have solved these problems before.",
+          "after": "When questions arise, your team receives answers from practitioners with direct experience.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/getting-started/12-before.jpg",
+          "shotAfter": "shots/getting-started/12-after.jpg"
+        },
+        {
+          "section": "Journey · Initial state · body",
+          "before": "Adopt Tokeniser from the situation you are in, an existing registry service, spreadsheets, or a greenfield feeder fund, to get started easily.",
+          "after": "Adopt Tokeniser from your current position, whether an existing registry service, spreadsheets or a greenfield feeder fund.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/getting-started/13-before.jpg",
+          "shotAfter": "shots/getting-started/13-after.jpg"
+        },
+        {
+          "section": "Journey · Initial state · body (2)",
+          "before": "Operate with a shadow-registry for pre-migration, or dive in with your company or a fully digitised feeder fund to launch straight into the opportunity.",
+          "after": "Operate a shadow registry ahead of migration, or begin directly with your company or a fully digitised feeder fund.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "\"Dive in\" and \"launch straight into the opportunity\" are informal.",
+          "shotBefore": "shots/getting-started/14-before.jpg",
+          "shotAfter": "shots/getting-started/14-after.jpg"
+        },
+        {
+          "section": "Journey · Prepare compliance",
+          "before": "Explore compliance with the new AML/KYC paradigm, and design new processes to suit. See how Automated Compliance works →",
+          "after": "Review your compliance approach under the new AML/KYC model, and design processes to suit. <a href=\"/product/superpowers/automated-compliance\">See how Automated Compliance works →</a>",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/getting-started/15-before.jpg",
+          "shotAfter": "shots/getting-started/15-after.jpg"
+        },
+        {
+          "section": "Journey · Digitised feeder fund",
+          "before": "For a simple start, create a digitised feeder fund in days, bypassing legacy challenges.",
+          "after": "For a straightforward start, establish a digitised feeder fund in days, without legacy constraints.",
+          "tier": "style",
+          "rules": [
+            "tone"
+          ],
+          "why": "Casual phrasing. The rewrite uses measured, precise financial language.",
+          "shotBefore": "shots/getting-started/16-before.jpg",
+          "shotAfter": "shots/getting-started/16-after.jpg"
         }
       ]
     }
@@ -1001,6 +1728,7 @@
     "lens": "Lens",
     "contraction": "No contractions",
     "length": "Short & simple",
-    "ai": "AI tell"
+    "ai": "AI tell",
+    "tone": "Institutional tone"
   }
 }
