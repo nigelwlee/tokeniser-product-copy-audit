@@ -1810,7 +1810,7 @@
         },
         {
           "label": "How it works · body",
-          "copy": "An investor pays in their chosen currency, and our settlement partner converts it into a digital Australian dollar on Redbelly. The investor does not need to move funds between networks, and the subscription settles to your register in one step, or not at all.",
+          "copy": "An investor pays in their chosen currency, and our settlement partner converts it into a digital Australian dollar on Redbelly. The investor does not need to move funds between networks, and the subscription settles to your register in one step.",
           "swap": "Tokeniser runs around the clock. Subscriptions, transfers and distributions are processed whenever they come in, and every one is checked against your fund's rules first, day or night. Nothing queues for the morning."
         },
         {
@@ -1859,7 +1859,7 @@
       ],
       "holds": [
         "The settlement partner is not named (\"our settlement partner\").",
-        "No claims about speed or live availability: no \"instant\", \"minutes\", \"T+0\" or \"available now\". \"In one step, or not at all\" describes how the transaction completes, not how fast.",
+        "No claims about speed or live availability: no \"instant\", \"minutes\", \"T+0\" or \"available now\".",
         "Written for fund managers, without web3 jargon. \"Stablecoin\" is used only where investors already hold crypto.",
         "Follows the audit rules: issuer lens, no contractions, 2 sentences max, no AI tells, institutional tone."
       ],
