@@ -1780,7 +1780,7 @@
         },
         {
           "label": "What changes · body 1",
-          "copy": "Enable investors to subscribe in the currency they already hold, wherever they are based. This supports global and USD-denominated funds, including those domiciled in Singapore or the British Virgin Islands.",
+          "copy": "Enable investors to subscribe in the currency they already hold, wherever they are based.",
           "swap": "Your fund is open when your investors are, including those offshore, in their own time zone. That gives an Australian fund a real edge in winning international capital and growing AUM."
         },
         {
@@ -1790,7 +1790,7 @@
         },
         {
           "label": "What changes · body 2",
-          "copy": "A significant pool of stablecoin capital is seeking quality assets. Enable investors who hold stablecoins to subscribe directly, while your fund receives its denomination currency.",
+          "copy": "Enable investors who hold stablecoins to subscribe directly, while your fund receives its denomination currency.",
           "swap": "Applications and settlement events can occur across varying time zones without waiting for the next domestic business cycle. Capital moves efficiently."
         },
         {
@@ -1800,7 +1800,7 @@
         },
         {
           "label": "What changes · body 3",
-          "copy": "Foreign exchange is built into the transaction, so your team does not manage separate conversions. Every subscription is recorded on your register in your fund's denomination currency.",
+          "copy": "Foreign exchange is built into every subscription, so your team does not manage separate conversions.",
           "swap": "Holdings, statements and transactions are available any time, on any device. Sophisticated investors notice a fund that matches their institutional pace."
         },
         {

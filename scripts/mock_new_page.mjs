@@ -1,6 +1,6 @@
 // Renders each draft new page into the live template page it is modelled on,
 // by swapping section text in the DOM, then saves the result as a standalone HTML page
-// (assets load from the QA site via <base>) with a draft banner and review notes.
+// (assets load from the QA site via <base>) with a draft banner.
 import { chromium } from 'playwright';
 import { readFileSync, writeFileSync } from 'node:fs';
 
@@ -46,7 +46,7 @@ for (const np of data.newPages || []) {
       (el.closest('picture') || el).replaceWith(ph);
     });
   });
-  // Strip scripts, cookie UI and analytics so the copy is static; add banner + review notes.
+  // Strip scripts, cookie UI and analytics so the copy is static; add a draft banner.
   await p.evaluate(({ np, base }) => {
     document.querySelectorAll('script, noscript, iframe, [class*="cookie" i], [id*="cookie" i]').forEach((el) => el.remove());
     const esc = (t) => t.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
@@ -61,27 +61,12 @@ for (const np of data.newPages || []) {
     // The icon font is blocked cross-origin, so serve a copy from the audit site.
     style.textContent = `@font-face{font-family:'Phosphor-Thin';src:url('https://tokeniser-product-copy-audit.vercel.app/assets/phosphor-thin.woff2') format('woff2');font-weight:normal;font-style:normal;font-display:swap}
       .draft-bar{position:relative;z-index:9999;background:#fff4dc;color:#8a5a00;font:600 14px Montserrat,system-ui,sans-serif;padding:10px 16px;text-align:center;border-bottom:1px solid #f0d9a8}
-      .draft-bar a{color:#8a5a00}
-      .review-notes{background:#fff9ec;border-top:4px solid #f0d9a8;padding:56px 16px;font:15px/1.6 Montserrat,system-ui,sans-serif;color:#2f3240}
-      .review-notes>div{max-width:1120px;margin:0 auto}
-      .review-notes h2{font-size:26px;margin:0 0 6px}.review-notes h3{font-size:17px;margin:26px 0 6px}
-      .review-notes ul,.review-notes ol{margin:0;padding-left:20px}.review-notes li{margin:4px 0}
-      .review-notes .kv{color:#6b6f7e}.review-notes .kv b{color:#2f3240}`;
+      .draft-bar a{color:#8a5a00}`;
     document.head.append(style);
     const bar = document.createElement('div');
     bar.className = 'draft-bar';
-    bar.innerHTML = `Draft page for review. Hold until confirmed live. Review notes are at the bottom. · <a href="https://tokeniser-product-copy-audit.vercel.app/">← Back to the copy audit</a>`;
+    bar.innerHTML = `Draft page for review. Hold until confirmed live. · <a href="https://tokeniser-product-copy-audit.vercel.app/">← Back to the copy audit</a>`;
     document.body.prepend(bar);
-    const brief = np.sections.find((x) => x.label.includes('diagram')).copy;
-    const notes = document.createElement('section');
-    notes.className = 'review-notes';
-    notes.id = 'review-notes';
-    notes.innerHTML = `<div><h2>Review notes</h2>
-      <p class="kv"><b>Status:</b> ${esc(np.status)}<br><b>Proposed URL:</b> ${esc(np.path)}<br><b>Menu:</b> ${esc(np.navNote)}<br><b>Meta description:</b> ${esc(np.metaDescription)}</p>
-      <h3>"How it works" diagram brief</h3><p>${brief}</p>
-      <h3>Holds applied</h3><ul>${np.holds.map((h) => `<li>${esc(h)}</li>`).join('')}</ul>
-      <h3>Open questions for the team</h3><ol>${np.openQuestions.map((q) => `<li>${esc(q)}</li>`).join('')}</ol></div>`;
-    (document.querySelector('footer') || document.body.lastElementChild).before(notes);
   }, { np, base: data.base });
   // Make the diagram placeholder carry the brief too.
   await p.evaluate((brief) => {
