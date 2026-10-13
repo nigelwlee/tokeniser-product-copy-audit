@@ -60,7 +60,7 @@ for (const np of data.newPages || []) {
     const style = document.createElement('style');
     // The icon font is blocked cross-origin, so serve a copy from the audit site.
     style.textContent = `@font-face{font-family:'Phosphor-Thin';src:url('https://tokeniser-product-copy-audit.vercel.app/assets/phosphor-thin.woff2') format('woff2');font-weight:normal;font-style:normal;font-display:swap}
-      .draft-bar{position:sticky;top:0;z-index:9999;background:#fff4dc;color:#8a5a00;font:600 14px Montserrat,system-ui,sans-serif;padding:10px 16px;text-align:center;border-bottom:1px solid #f0d9a8}
+      .draft-bar{position:relative;z-index:9999;background:#fff4dc;color:#8a5a00;font:600 14px Montserrat,system-ui,sans-serif;padding:10px 16px;text-align:center;border-bottom:1px solid #f0d9a8}
       .draft-bar a{color:#8a5a00}
       .review-notes{background:#fff9ec;border-top:4px solid #f0d9a8;padding:56px 16px;font:15px/1.6 Montserrat,system-ui,sans-serif;color:#2f3240}
       .review-notes>div{max-width:1120px;margin:0 auto}
