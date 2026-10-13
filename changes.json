@@ -1730,5 +1730,146 @@
     "length": "Short & simple",
     "ai": "AI tell",
     "tone": "Institutional tone"
-  }
+  },
+  "newPages": [
+    {
+      "id": "accept-any-currency",
+      "name": "Accept Any Currency",
+      "group": "Superpowers",
+      "menuGroup": "Distribution",
+      "path": "/product/superpowers/accept-any-currency",
+      "template": "/product/superpowers/always-on",
+      "anchorAfter": "always-on",
+      "status": "Draft for review. Hold until Matt Mills confirms the feature is live.",
+      "metaDescription": "Accept subscriptions in fiat currencies, stablecoins and approved digital assets, with each payment settling in your fund's denomination currency.",
+      "navNote": "Superpowers menu → Distribution group: Always-On, Real-Time Transparency, Accept Any Currency.",
+      "sections": [
+        {
+          "label": "Hero · kicker",
+          "copy": "Accept any currency",
+          "swap": "Always-on"
+        },
+        {
+          "label": "Hero · H1",
+          "copy": "Accept any currency, <em>settle in your own.</em>",
+          "swap": "Your fund, open 24/7."
+        },
+        {
+          "label": "Hero · subtitle",
+          "copy": "Accept subscriptions in fiat currencies, stablecoins and other approved digital assets. Every payment is converted and settles in your fund's denomination currency.",
+          "swap": "No market hours, no cut-offs. Investors can view, subscribe, transfer and settle at any hour, from any device, with your rules checked every time."
+        },
+        {
+          "label": "Hero · CTAs",
+          "copy": "Get the briefs · Book a Demo"
+        },
+        {
+          "label": "The problem today · H2",
+          "copy": "Currency conversion on every transaction",
+          "swap": "Closed nights, weekends and public holidays"
+        },
+        {
+          "label": "The problem today · body",
+          "copy": "Most funds accept only their denomination currency, so offshore and digital asset investors must convert before they invest. A fund with many New Zealand investors, for example, pays for NZD to AUD conversion on every subscription and distribution.",
+          "swap": "Most funds run on strict domestic business hours. Subscriptions that arrive after the afternoon cut-off wait until the next working day. Traditional registry systems pause outside local operation windows, forcing international applications to wait for a local processing cycle before anything moves."
+        },
+        {
+          "label": "What changes · H3 1",
+          "copy": "Access to international capital.",
+          "swap": "A global investor base."
+        },
+        {
+          "label": "What changes · body 1",
+          "copy": "Enable investors to subscribe in the currency they already hold, wherever they are based. This supports global and USD-denominated funds, including those domiciled in Singapore or the British Virgin Islands.",
+          "swap": "Your fund is open when your investors are, including those offshore, in their own time zone. That gives an Australian fund a real edge in winning international capital and growing AUM."
+        },
+        {
+          "label": "What changes · H3 2",
+          "copy": "Reach digital asset holders.",
+          "swap": "Processing without friction."
+        },
+        {
+          "label": "What changes · body 2",
+          "copy": "A significant pool of stablecoin capital is seeking quality assets. Enable investors who hold stablecoins to subscribe directly, while your fund receives its denomination currency.",
+          "swap": "Applications and settlement events can occur across varying time zones without waiting for the next domestic business cycle. Capital moves efficiently."
+        },
+        {
+          "label": "What changes · H3 3",
+          "copy": "Simpler currency operations.",
+          "swap": "Investors served on their schedule."
+        },
+        {
+          "label": "What changes · body 3",
+          "copy": "Foreign exchange is built into the transaction, so your team does not manage separate conversions. Every subscription is recorded on your register in your fund's denomination currency.",
+          "swap": "Holdings, statements and transactions are available any time, on any device. Sophisticated investors notice a fund that matches their institutional pace."
+        },
+        {
+          "label": "How it works · H2",
+          "copy": "Converted and settled,<br />in a single transaction",
+          "swap": "Built on infrastructure that never closes"
+        },
+        {
+          "label": "How it works · body",
+          "copy": "An investor pays in their chosen currency, and our settlement partner converts it into a digital Australian dollar on Redbelly. The investor does not need to move funds between networks, and the subscription settles to your register in one step, or not at all.",
+          "swap": "Tokeniser runs around the clock. Subscriptions, transfers and distributions are processed whenever they come in, and every one is checked against your fund's rules first, day or night. Nothing queues for the morning."
+        },
+        {
+          "label": "How it works · diagram brief (for design)",
+          "copy": "<b>Today:</b> Investor holds NZD or USDT → converts through a bank or exchange → pays AUD to the fund. <b>On Tokeniser:</b> Investor pays in NZD, USD or USDT → converted to digital AUD → settled on your register. Tagline: \"Settled in your currency.\""
+        },
+        {
+          "label": "Get ready · kicker",
+          "copy": "Get ready now",
+          "swap": "Get started now"
+        },
+        {
+          "label": "Get ready · H2",
+          "copy": "Prepare now, activate when ready",
+          "swap": "Start without changing everything"
+        },
+        {
+          "label": "Get ready · bullet 1",
+          "copy": "Onboard your fund and investors now, alongside your current registry.",
+          "swap": "Your core administrative platform can be activated alongside existing legacy systems."
+        },
+        {
+          "label": "Get ready · bullet 2",
+          "copy": "You choose which currencies and digital assets your fund accepts.",
+          "swap": "The investor portal and instant settlement are available from day one."
+        },
+        {
+          "label": "Get ready · bullet 3",
+          "copy": "Speak with our team about the currencies relevant to your investors.",
+          "swap": "Secondary transfers are ready to switch on when your fund is."
+        },
+        {
+          "label": "Stats block",
+          "copy": "Reuse the shared stats block unchanged."
+        },
+        {
+          "label": "Briefs block · H2 (shared)",
+          "copy": "The case for tokenisation now",
+          "swap": "Three briefs. One argument."
+        },
+        {
+          "label": "Briefs block · body (shared)",
+          "copy": "Three briefs covering the commercial case for tokenisation, the current opportunity in Australia, and the cost of delay.",
+          "swap": "The commercial case for tokenisation, the window of opportunity now open in Australia, and the cost of waiting. Each brief stands alone; together they make the complete case."
+        }
+      ],
+      "holds": [
+        "The settlement partner is not named (\"our settlement partner\").",
+        "No claims about speed or live availability: no \"instant\", \"minutes\", \"T+0\" or \"available now\". \"In one step, or not at all\" describes how the transaction completes, not how fast.",
+        "Written for fund managers, without web3 jargon. \"Stablecoin\" is used only where investors already hold crypto.",
+        "Follows the audit rules: issuer lens, no contractions, 2 sentences max, no AI tells, institutional tone."
+      ],
+      "openQuestions": [
+        "Can investors receive distributions in their own currency, or only pay subscriptions? The draft claims subscriptions only. Distributions appear only in the NZ example of today's problem.",
+        "Which currencies and digital assets will be supported at launch?",
+        "Page name: keep \"Accept Any Currency\" (latest brief), or follow Rusty's framing, \"Atomic settlement via a digital currency exchange\"?",
+        "Should the Distribution product page get a third card under \"The superpowers behind Distribution\"? Proposed: \"Accept Any Currency: Accept subscriptions in approved currencies, settled in your fund's own.\"",
+        "The hero photo in the mockup is Always-On's. A new image is needed, plus the \"How it works\" diagram above."
+      ]
+    }
+  ]
 }

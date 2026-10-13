@@ -100,6 +100,19 @@ td.n{font-variant-numeric:tabular-nums;width:90px}
 dialog{border:0;padding:0;background:transparent;max-width:96vw;max-height:94vh}
 dialog::backdrop{background:rgba(10,10,15,.82)}
 dialog img{max-width:96vw;max-height:94vh;display:block;border-radius:8px}
+.pill.draft{background:var(--amber-bg);color:var(--amber-ink)}
+.banner{background:var(--amber-bg);color:var(--amber-ink);border-radius:10px;padding:12px 16px;font-weight:600;font-size:14px;margin-bottom:16px}
+.np-grid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:18px;align-items:start}
+.np-copy td:first-child{width:34%;color:var(--muted);font-size:13px;font-weight:600}
+.np-copy em{font-style:italic;color:var(--mint-ink);font-weight:600}
+.np-mock{position:sticky;top:64px}
+.np-mock img{width:100%;border:1px solid var(--line);border-radius:10px;cursor:zoom-in;display:block}
+.np-mock figcaption{font-size:11px;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--muted);margin-bottom:6px}
+.np-list{margin:6px 0 0;padding-left:18px}
+.np-list li{margin:4px 0}
+.np-meta{font-size:14px;color:var(--muted);margin:0 0 14px}
+.np-meta b{color:var(--ink)}
+@media (max-width:720px){.np-grid{grid-template-columns:1fr}.np-mock{position:static}}
 footer{color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding:24px 0 48px}
 @media (max-width:720px){
   .diff,.shots{grid-template-columns:1fr}
@@ -161,6 +174,7 @@ const label = { break: 'Must fix', tighten: 'Review', style: 'Style' };
 
 fetch('changes.json').then((r) => r.json()).then((data) => {
   const pages = data.pages;
+  const newPages = data.newPages || [];
   const count = (p, t) => p.changes.filter((c) => c.tier === t).length;
 
   // Nav
@@ -168,7 +182,10 @@ fetch('changes.json').then((r) => r.json()).then((data) => {
   let html = '';
   for (const g of ['Superpowers', 'Product']) {
     html += `<span class="grp">${g}</span>`;
-    for (const p of pages.filter((p) => p.group === g)) html += `<a href="#${p.id}">${esc(p.name)}</a>`;
+    for (const p of pages.filter((p) => p.group === g)) {
+      html += `<a href="#${p.id}">${esc(p.name)}</a>`;
+      for (const n of newPages.filter((n) => n.anchorAfter === p.id)) html += `<a href="#${n.id}">${esc(n.name)} <span class="pill draft">Draft</span></a>`;
+    }
   }
   html += `<a href="#other-notes">Other notes</a><div class="filters" role="group" aria-label="Filter">
     <button data-f="all" aria-pressed="true">All</button><button data-f="break" aria-pressed="false">Must fix</button><button data-f="tighten" aria-pressed="false">Review</button><button data-f="style" aria-pressed="false">Style</button></div>`;
@@ -180,6 +197,7 @@ fetch('changes.json').then((r) => r.json()).then((data) => {
   for (const p of pages) {
     const b = count(p, 'break'), t = count(p, 'tighten'), st = count(p, 'style'); nb += b; nt += t; ns += st;
     tb_html += `<tr><td><a href="#${p.id}">${esc(p.name)}</a>${b + t + st === 0 ? ' <span class="pill ok">Passes</span>' : ''}</td><td class="hide-sm">${p.group}</td><td class="n">${b || '–'}</td><td class="n">${t || '–'}</td><td class="n">${st || '–'}</td></tr>`;
+    for (const n of newPages.filter((n) => n.anchorAfter === p.id)) tb_html += `<tr><td><a href="#${n.id}">${esc(n.name)}</a> <span class="pill draft">New page draft</span></td><td class="hide-sm">${n.group}</td><td class="n" colspan="3">Full draft copy for review</td></tr>`;
   }
   tb.innerHTML = tb_html;
   document.getElementById('totals').textContent = `${nb + nt + ns} changes across ${pages.length} pages · ${nb} must fix · ${nt} review · ${ns} style`;
@@ -203,6 +221,20 @@ fetch('changes.json').then((r) => r.json()).then((data) => {
         </div></article>`;
     });
     out.insertAdjacentHTML('beforeend', s + '</section>');
+    for (const n of newPages.filter((n) => n.anchorAfter === p.id)) {
+      const rows = n.sections.map((x) => `<tr><td>${esc(x.label)}</td><td>${x.copy}</td></tr>`).join('');
+      out.insertAdjacentHTML('beforeend', `<section class="page" id="${n.id}"><div class="page-h"><span class="grp">${n.group} · ${n.menuGroup}</span><h3>${esc(n.name)}</h3><span class="pill draft">New page · Draft</span><span class="sp"></span></div>
+        <div class="banner">${esc(n.status)}</div>
+        <p class="np-meta"><b>Proposed URL:</b> ${esc(n.path)} &nbsp;·&nbsp; <b>Menu:</b> ${esc(n.navNote)}<br><b>Meta description:</b> ${esc(n.metaDescription)}</p>
+        <div class="np-grid">
+          <div>
+            <table class="np-copy"><thead><tr><th>Section</th><th>Draft copy</th></tr></thead><tbody>${rows}</tbody></table>
+            <div class="note" style="margin-top:18px"><h4>Holds applied</h4><ul class="np-list">${n.holds.map((h) => `<li>${esc(h)}</li>`).join('')}</ul></div>
+            <div class="note"><h4>Open questions for the team</h4><ol class="np-list">${n.openQuestions.map((q) => `<li>${esc(q)}</li>`).join('')}</ol></div>
+          </div>
+          <figure class="np-mock shots" style="margin:0;display:block"><figcaption>Mockup in the live Superpowers template</figcaption><img loading="lazy" src="shots/new/${n.id}.jpg" alt="Mockup of the ${esc(n.name)} page"></figure>
+        </div></section>`);
+    }
   }
 
   // Notes and meta drafts
