@@ -1810,7 +1810,7 @@
         },
         {
           "label": "How it works · body",
-          "copy": "An investor pays in their chosen currency, and our settlement partner converts it into a digital Australian dollar on Redbelly. The investor does not need to move funds between networks, and the subscription settles to your register in one step.",
+          "copy": "An investor pays in their chosen currency.",
           "swap": "Tokeniser runs around the clock. Subscriptions, transfers and distributions are processed whenever they come in, and every one is checked against your fund's rules first, day or night. Nothing queues for the morning."
         },
         {
