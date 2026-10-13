@@ -1810,7 +1810,7 @@
         },
         {
           "label": "How it works · body",
-          "copy": "An investor pays in their chosen currency.",
+          "copy": "An investor pays in their chosen currency. And that is it!",
           "swap": "Tokeniser runs around the clock. Subscriptions, transfers and distributions are processed whenever they come in, and every one is checked against your fund's rules first, day or night. Nothing queues for the morning."
         },
         {
